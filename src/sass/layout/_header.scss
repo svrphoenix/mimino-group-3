@@ -11,7 +11,7 @@
 
 .header__logo {
   text-transform: uppercase;
-//   font-family: 'Film P3';
+  font-family: 'Film P3';
   font-weight: 700;
   font-size: 36px;
   line-height: calc(39/36);
@@ -52,4 +52,11 @@
   width: 24px;
   height: 24px;
   fill: #f3c653;
+}
+
+
+// сховати на мобільному екрані надлишкові елементи
+
+.mob-hide{
+    display: none;
 }
