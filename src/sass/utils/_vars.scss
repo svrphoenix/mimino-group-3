@@ -1,0 +1,30 @@
+// основний колір тексту 1 color: #FFFFFF;
+// основний колір тексту 2 color: #000000;
+// колір абзаців темний color: #5F5F5F;
+// колір абзаців бронза color: #C79002;
+// колір абзаців світлий color: #BABABA;
+// другорядний колір тексту color: #B4B4B4;
+// акцентований колір color: #F3C653;
+// основний фон background: #FFFFFF;
+// другорядний фон background: #F0ECD6;
+// не анктивна кнопка 1 background: rgba(0, 0, 0, 0.4);
+// не активна кнопка 2 background: #000000;
+// ховер фокус кнопки 1 background: #FFFFFF;
+// ховер фокус кнопки 2 background: #F3C653;
+//
+
+:root {
+  --primary-text-color-1: #ffffff;
+  --primary-text-color-2: #000000;
+  --dark-paragraph-color: #5f5f5f;
+  --bronze-paragraph-color: #c79002;
+  --light-paragraph-color: #bababa;
+  --secondary-text-color: #b4b4b4;
+  --accent-color: #f3c653;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f0ecd6;
+  --inactive-button-color-1: rgba(0, 0, 0, 0.4);
+  --inactive-button-color-2: #000000;
+  --focus-button-color-1: #ffffff;
+  --focus-button-color-2: #f3c653;
+}
