@@ -10,11 +10,27 @@
 
     <h2>забронювати номер</h2>
     <form>
-        <label><input type="text">На кого забронювати номер?</label>
-        <label><input type="text">Номер телефону</label>
-        <label><input type="text">Категорія номеру</label>
-        <label><input type="text">Дата заїзду</label>
-        <label><input type="text">Дата виїзду</label>
+        <label><input type="text" name="client" placeholder="Ваше ім'я">На кого забронювати номер?</label>
+        <label><input type="text" name="tel">Номер телефону</label>
+        <select id="room-type" name="room-type">
+            <option value="double-luxe">Двомісний люкс</option>
+            <option value="triple">Трьохмісний</option>
+            <option value="double">Двомісний</option>
+        </select>
+        <label for="room-type">Категорія номеру</label>
+        <select id="date-arrival" name="date-arrival">
+            <option value="today">Сьогодні</option>
+            <option value="tomorrow">Завтра</option>
+            <option value="after-tomorrow">Післязавтра</option>
+        </select>
+        <label for="date-arrival">Дата заїзду</label>
+        <select id="date-leave" name="date-leave">
+            <option value="today">Сьогодні</option>
+            <option value="tomorrow">Завтра</option>
+            <option value="after-tomorrow">Післязавтра</option>
+        </select>
+        <label for="date-leave">Дата виїзду</label>
+        <!-- оформити бронювання закриває модальше вікно -->
         <button type="submit">оформити бронювання</button>
     </form>
     </div>
