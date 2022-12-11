@@ -1,5 +1,10 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+@font-face {
+  font-family: 'Film P3 Bold';
+  src: url(../fonts/film-p3-bold.ttf);
+} 
+
 body {
   margin: 0;
   //   color: ;
@@ -27,6 +32,5 @@ body {
 }
 
 .list {
-  display: flex;
   list-style: none;
 }
