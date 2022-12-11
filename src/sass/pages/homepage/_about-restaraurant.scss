@@ -1,6 +1,10 @@
 .about-res {
   padding-top: 16px;
 
+  // Тимчасово
+
+  padding-bottom: 100px;
+
   &__pos {
     @media screen and (min-width: 1024px) {
         display: flex;
