@@ -1,150 +1,117 @@
-// Руденко С. - додав собі reset, бо не працював
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-// Руденко С. -міксини
-
-@mixin font($weight, $size, $height, $spacing) {
-  font-weight: $weight;
-  font-size: $size;
-  line-height: calc($height / $size);
-  letter-spacing: $spacing;
-}
-@mixin mobile {
-  @media screen and (min-width: 414px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media screen and (min-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: 1280px) {
-    @content;
-  }
-}
-
 .triple-room {
-  font-family: 'Montserrat';
   background-color: #f0ecd6;
 
-&__container {
-  // властивості загального контейнеру
-  padding: 32px 15px;
-  width: 100%;
+  &__container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 
-  margin-left: auto;
-  margin-right: auto;
-
-  @include mobile {
-    max-width: 414px;
+    @include tablet {
+      padding-top: 66px;
+    }
   }
-  @include tablet {
-    max-width: 1024px;
+
+  &__text-container {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
   }
-  @include desktop {
-    max-width: 1280px;
+
+  &__pretitle {
+    margin-bottom: 8px;
+    font-family: 'Times New Roman', serif;
+    @include font(400, 20px, 23px, null);
+
+    color: #b4b4b4;
+
+    @include tablet {
+      margin-bottom: 4px;
+      @include font(null, 32px, 37px, null);
+    }
   }
-// власні властивості 
-  position: relative;
-  overflow: hidden;
-}
 
-&__text-container {
-  text-align: right;
-  margin-left: auto;
-  margin-right: 0;
-}
+  &__logo {
+    margin-bottom: 32px;
+    font-family: 'Film P3 Bold', sans-serif;
+    @include font(700, 40px, 43px, 0.3em);
 
-&__pretitle {
-  margin-bottom: 8px;
-  font-family: 'Times New Roman';
-  @include font(400, 20px, 23px, null);
+    color: #494848;
 
-  color: #b4b4b4;
+    @include tablet {
+      margin-bottom: 62px;
+      @include font(null, 64px, 69px, null);
+    }
+  }
 
-  @include desktop {
-    @include font(null, 32px, 37px, null);
+  &__title-container {
+    display: inline-block;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    font-family: 'Times New Roman', serif;
+    @include font(700, 24px, 28px, 0.05em);
+    color: #000000;
+    text-transform: uppercase;
+
+    @include tablet {
+      margin-bottom: 16px;
+      @include font(null, 30px, 34px, null);
+    }
+
+    @include desktop {
+      @include font(null, 36px, 41px, null);
+    }
+  }
+
+  &__description {
+    margin-bottom: 32px;
+    max-width: 242px;
+    text-align: left;
+    @include font(700, 12px, 15px, 0.02em);
+    color: #7a7a7a;
+
+    @include tablet {
+      margin-bottom: 169px;
+      @include font(null, 16px, 20px, null);
+    }
+  }
+
+  &__thumb {
+    width: 244px;
+    height: 322px;
+    margin-bottom: 32px;
+    background-color: #dadada;
+    overflow: hidden;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    @include tablet {
+      position: absolute;
+      top: -32px;
+      left: 112px;
+      width: 400px;
+      height: 524px;
+      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__button-container {
+    // left: 20px;
+    @include tablet {
+      position: absolute;
+      bottom: 47px;
+    }
   }
 }
-
-&__logo {
-  margin-bottom: 32px;
-  font-family: 'Film P3';
-  @include font(700, 40px, 43px, 0.03em);
-
-  color: #494848;
-
-  @include desktop {
-    @include font(null, 64px, 69px, null);
-  }
-}
-
-&__title-container {
-  display: inline-block;
-}
-
-&__title {
-  margin-bottom: 12px;
-  font-family: 'Times New Roman';
-  @include font(700, 24px, 28px, 0.05em);
-  color: #000000;
-  text-transform: uppercase;
-  @include desktop {
-    @include font(null, 36px, 41px, null);
-  }
-}
-
-&__description {
-  margin-bottom: 32px;
-  max-width: 242px;
-  text-align: left;
-  @include font(700, 12px, 15px, 0.02em);
-  color: #7a7a7a;
-
-  @include desktop {
-    @include font(null, 16px, 20px, null);
-  }
-}
-
-&__thumb {
-  width: 244px;
-  height: 322px;
-  margin-bottom: 32px;
-  background-color: #dadada;
-  overflow: hidden;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-}
-}
-
 
 // .triple-room__image {
 // }
 
 .triple-room__slider {
   // width: auto;
-  // overflow: hidden;
-  position: absolute;
+  // position: absolute;
   left: 130px;
   margin-bottom: 20px;
 }
@@ -158,25 +125,6 @@ button {
 // }
 .slick_prev {
   color: red;
-}
-
-.button {
-  display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  width: 236px;
-  @include font(700, 16px, 20px, 0.02em);
-  text-align: center;
-  color: #f3c653;
-  background: #000000;
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  &:hover,
-  &:focus {
-    background-color: #ffffff;
-    border: 2px solid #f3c653;
-    border-radius: 25px;
-  }
 }
 
 .triple-room__about-button {
