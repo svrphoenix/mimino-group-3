@@ -1,0 +1,148 @@
+.nomer {
+  margin: 0 auto;
+  padding: 32px 12px;
+  color: var(--text-room-color);
+  @include tablet {
+    padding: 48px 47px 40px 47px;
+  }
+  @include desktop {
+    padding: 48px, 198px, 48px, 85px;
+  }
+
+  &__align {
+    @include tablet {
+      padding-right: 50px;
+    }
+    @include desktop {
+      padding-right: 38px;
+    }
+  }
+  &__title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 16px;
+    color: var(--black);
+    &-content {
+      font-family: 'Montserrat';
+      font-style: normal;
+      @include font(700, 16px, 20px, 0.02em);
+      margin-bottom: 32px;
+
+      @include tablet {
+        width: 757px;
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: 32px;
+
+    &-title {
+      font-family: 'Times New Roman';
+
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: var(--black);
+      margin-bottom: 16px;
+    }
+
+    &-blok {
+      @include tablet {
+        display: flex;
+        // flex-wrap: wrap;
+        gap: 80px;
+      }
+
+      @include desktop {
+        gap: 159px;
+      }
+
+      &--gap {
+        @include tablet {
+          gap: 30px;
+        }
+
+        @include desktop {
+          gap: 64px;
+        }
+      }
+    }
+
+    &-blok > &-text {
+      margin-bottom: 12px;
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+
+    &-text {
+      display: block;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+
+      @include tablet {
+        width: 400px;
+      }
+
+      &--width {
+        @include tablet {
+          width: 450px;
+        }
+        @include desctop {
+          width: 495px;
+        }
+      }
+    }
+  }
+
+  &__blok-link {
+    padding-top: 8px;
+    @include tablet {
+      padding-left: 496px;
+    }
+    @include desktop {
+      padding-left: 563px;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin-bottom: 20px;
+    @include tablet {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    align-items: center;
+
+    /* Brown */
+
+    color: #c79002;
+    fill: #c79002;
+
+    &:hover,
+    &:focus {
+      color: #f3c653;
+      fill: transparent;
+    }
+
+    &-text {
+      margin-right: 12px;
+    }
+  }
+}
