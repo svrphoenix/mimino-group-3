@@ -1,0 +1,53 @@
+// .slick-track {
+//     display: flex;
+//     gap: 20px;
+//     @media screen and (min-width: 1024px) {
+//       gap: 32px;
+//     }
+//     @media screen and (min-width: 1280px) {
+//       gap: 87px;
+//     }
+//   }
+
+  .details {
+    display: flex;
+    width: 414px;
+    height: 735px;
+    background: rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7),
+                    url(../images/homepage/details-hotel/hero-image/hero-mobile-min.jpg));
+     
+
+    @media screen and (min-width: 1024px) {
+        width: 1024px;
+        height: 620px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: auto;
+        height: auto;
+        background: rgba(0, 0, 0, 0.7);
+        
+    }
+}
+.hero-overlay {
+}
+.details_logo { 
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+
+}
+.details_title {
+}
+.details_text {
+}
+.multiple-items {
+}
+.details_button {
+}
+.button {
+}
