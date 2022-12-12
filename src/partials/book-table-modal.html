@@ -6,12 +6,11 @@
 
     <p class="modal-titel">забронювати столик</p>
     <form class="form">
-      <label class="modal-form-titel"
-        ><input type="text" name="client" placeholder="Ваше ім'я" />На кого
+      <label class="modal-lable"
+        ><input class="modal-input" type="text" name="client" placeholder="Ваше ім'я">На кого
         забронювати столик?</label
       >
-      <label
-        ><input type="text" name="tel" placeholder="+38 (___) ___-__-__" />Номер
+      <label class="modal-lable"><input class="modal-input" type="text" name="tel" placeholder="+38 (___) ___-__-__">Номер
         телефону</label
       >
 
@@ -20,17 +19,16 @@
         <option value="thre">3</option>
         <option value="four">4</option>
       </select>
-      <lable for="table">Столик на яку кількість осіб?</lable>
+      <lable class="modal-lable" for="table">Столик на яку кількість осіб?</lable>
 
       <select id="reservation" name="reservation">
         <option value="today">Сьогодні</option>
         <option value="tomorrow">Завтра</option>
         <option value="after-tomorow">Післязавтра</option>
       </select>
-      <label for="reservation">На яку дату бронювати?</label>
+      <label  class="modal-lable" for="reservation">На яку дату бронювати?</label>
 
       <button class="modal-resevation" type="submit">оформити бронювання</button>
-      </button>
     </form>
   </div>
 </div>
