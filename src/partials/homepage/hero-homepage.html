@@ -1,34 +1,31 @@
 <section class="section hero">
   <div class="container hero-container">
-    <h1 class="hero__title">міміно</h1>
+    <h1 class="hero__title">MIMIHO</h1>
     <h2 class="hero__subtitle">Ресторанно-готельний комплекс</h2>
     <p class="hero__slogan">смак життя 24/7</p>
-    <ul class="reserved list">
-      <li>
-        <!-- додати атрибут для модалки -->
-        <button type="button" class="reserved__button reserved__table">
-          Забронювати столик
-        </button>
-      </li>
-      <li>
-        <!-- додати атрибут для модалки -->
-        <button type="button" class="reserved__button reserved__room">
-          Забронювати номер
-        </button>
-      </li>
-    </ul>
-    <address>
+    <!-- додати атрибут для модалки -->
+    <button type="button" class="reserved__button reserved__table">
+      Забронювати столик
+    </button>
+    <!-- додати атрибут для модалки -->
+    <button type="button" class="reserved__button reserved__room">
+      Забронювати номер
+    </button>
+    <address class="hero__address">
       <!-- додати шлях до мапи -->
+      <svg class="icon-gps" width="20" height="20">
+        <use href="./images/sprite.svg#gps"></use>
+      </svg>
       <a
-        href=""
+        href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
         target="_blank"
         rel="noopener noreferrer nofollow"
         class="link address"
-        >Україна, м. Полтава, вул. Маршала Бірюзова, 15</a
+        >Україна, м. Полтава, <br />
+        вул. Маршала Бірюзова, 15</a
       >
-      <!-- додати іконку -->
     </address>
-    <!-- додати шляхи до соцмереж та іконки замість найменувань-->
+    <!-- додати шляхи до соцмереж -->
     <ul class="soc__list list">
       <li class="soc__item">
         <a
@@ -36,8 +33,9 @@
           target="_blank"
           rel="noopener noreferrer nofollow"
           class="soc__link link"
-          >Instagram</a
-        >
+          ><svg class="soc__icon" width="24" height="24">
+            <use href="./images/sprite.svg#instagram"></use></svg
+        ></a>
       </li>
       <li class="soc__item">
         <a
@@ -45,8 +43,9 @@
           target="_blank"
           rel="noopener noreferrer nofollow"
           class="soc__link link"
-          >Facebook</a
-        >
+          ><svg class="soc__icon" width="24" height="24">
+            <use href="./images/sprite.svg#facebook"></use></svg
+        ></a>
       </li>
       <li class="soc__item">
         <a
@@ -54,8 +53,9 @@
           target="_blank"
           rel="noopener noreferrer nofollow"
           class="soc__link link"
-          >Telegramm</a
-        >
+          ><svg class="soc__icon" width="24" height="24">
+            <use href="./images/sprite.svg#telegram"></use></svg
+        ></a>
       </li>
     </ul>
   </div>
