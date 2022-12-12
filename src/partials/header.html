@@ -1,53 +1,92 @@
 <header class="header__section">
-  <!-- <div class="container">  -->
-  <nav class="nav__line">
-    <a class="header__logo" href="./index.html">міміно</a>
-    <ul class="nav__list">
-      <li>
-        <ul class="nav__item">
-          <li><a class="nav__link" href="./restaurant.html">Ресторан</a></li>
-          <li><a class="header__contacts" href="tel:+0955559533">
-            <svg class="header__icon-contacts">
-              <use href="./images/sprite.svg#phone"></use>
-            </svg> <span class="mob-hide"> 095 555 95 33 </span>
-          </a></li>
-        </ul>
-      </li>
-      <li>
-        <ul class="nav__item">
-          <li><a class="nav__link" href="./hotel.html">Готель</a></li>
-          <li><a class="header__contacts" href="tel:+0668491089">
+  <div class="container">
+    <nav class="nav__line">
+      <!-- font face не працює для посилання -->
+      <a href="./index.html">
+        <p class="header__logo">MIMIHO</p>
+      </a>
+      <ul class="nav__list">
+        <li>
+          <ul class="nav__item">
+            <li><a class="nav__link" href="./restaurant.html">Ресторан</a></li>
+            <!-- іконка для мобільної, прибирається на таблеті й декстопі -->
+            <li class="tablet-desc-hide">
+              <a href="tel:+0955559533">
+                <svg class="header__icon-contacts">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- іконка та номер, прибирається в мобільній -->
+            <li>
+              <div class="tablet-desc-show">
+                <a class="header__contacts" href="tel:+0955559533">
+                  <svg class="header__icon-contacts">
+                    <use href="./images/sprite.svg#phone"></use>
+                  </svg>095 555 95 33
+                </a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="nav__item">
+            <li><a class="nav__link" href="./hotel.html">Готель</a></li>
+            <!-- іконка для мобільної, прибирається на таблеті й декстопі -->
+            <li class="tablet-desc-hide">
+            <a href="tel:+0668491089">
               <svg class="header__icon-contacts">
                 <use href="./images/sprite.svg#phone"></use>
-              </svg> <span class="mob-hide"> 066 849 10 89 </span>
-          </a></li>
-          <li><a href="tel:+0672758540"> <span class="mob-hide"> 067 275 85 40 </span> </a></li>
-        </ul>        
-      </li>
-    </ul>
-  </nav>
-<!-- </div> -->
+              </svg>
+              </a>
+            </li>
+             <!-- іконка та номер, прибирається в мобільній -->
+            <li>
+              <div class="tablet-desc-show holel-numbers">
+              <a class="header__contacts" href="tel:+0668491089">
+                <svg class="header__icon-contacts">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+                <p class="mob-hide-tel">066 849 10 89</p>
+              </a>
+              <a href="tel:+0672758540">
+                <p class="mob-hide-tel">067 275 85 40</p>
+              </a>
+            </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-  <!-- у мобільному та таблеті соц.мережі переходять в hero -->
-  <div class="mob-hide">
-    <ul class="header__socials-list">
-      <li><a class="header__socials-item" href="">inst
-        <svg class="header__icon-socials" width="24" height="24">
-          <use></use>
-        </svg>
-      </a></li>
-
-      <li><a class="header__socials-item" href="">fb
-        <svg class="header__icon-socials" width="24" height="24">
-          <use></use>
-        </svg>
-      </a></li>
-
-      <li><a class="header__socials-item" href="">tlg
-        <svg class="header__icon-socials" width="24" height="24">
-          <use></use>
-        </svg>
-      </a></li>
-    </ul>
+      <!-- у мобільному та таблеті соц.мережі переходять в hero -->
+      <div class="mob-hide-socials header__socials">
+        <ul class="header__socials-list">
+          <li>
+            <a class="header__socials-item" href=""
+              >
+              <svg class="header__icon-socials" width="24" height="24">
+                <use href="./images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="header__socials-item" href=""
+              >
+              <svg class="header__icon-socials" width="24" height="24">
+                <use href="./images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="header__socials-item" href=""
+              >
+              <svg class="header__icon-socials" width="24" height="24">
+                <use href="./images/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>   
   </div>
 </header>
