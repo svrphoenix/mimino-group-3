@@ -1,0 +1,101 @@
+
+.details-restaurant{
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(/src/images/pexels.jpg),
+    no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.details-restaurant__section{
+    margin-left: 140px;
+
+    @media screen and (min-width: 1024px) {
+        margin-left: 278px;
+    }
+
+         @media screen and (min-width: 1280px) {
+             margin-left: 338px;
+         }
+}
+
+.details-restaurant__logo{
+    
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 43px;
+        letter-spacing: 0.3em;
+        color: #FFFFFF;
+        margin-bottom: 12px;
+}
+
+.details-restaurant__title{
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #FFFFFF;  
+margin-bottom: 20px;
+}
+
+
+.details-restaurant__dscr{
+    font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.02em;
+color: #BABABA;
+margin-bottom: 48px;
+margin-right: 15px;
+
+@media screen and (min-width: 1024px) {
+        margin-right: 136px;
+    }
+
+        @media screen and (min-width: 1280px) {
+            margin-right: 332px;
+        }
+
+
+
+}
+
+
+
+.slick-prev:before {
+    content: "";
+    background-image: url(../images/vector.png);
+
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus{
+    color: #F3C653 !important;
+}
+.slick-slider{
+    margin-left: 40px;
+
+
+}
+
+.slick-arrow {
+   display: none;
+ position: absolute;
+    bottom: -25px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: transparent !important;
+}
+
