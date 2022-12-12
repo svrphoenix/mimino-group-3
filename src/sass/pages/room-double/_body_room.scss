@@ -25,6 +25,7 @@
     line-height: 37px;
     margin-bottom: 16px;
     color: var(--black);
+    text-transform: uppercase;
     &-content {
       font-family: 'Montserrat';
       font-style: normal;
@@ -48,6 +49,7 @@
       line-height: 28px;
       color: var(--black);
       margin-bottom: 16px;
+      text-transform: uppercase;
     }
 
     &-blok {
