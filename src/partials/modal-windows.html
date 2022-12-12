@@ -1,11 +1,13 @@
 <!-- приховати всі модалки -->
-<div class="is-hidden modal-section">
+
+<!-- додати is-hidden -->
+<div class=" modal-section">
 
     <!-- book room -->
     <div class="modal-room">
     <!-- close modal button -->
-    <svg width="24" height="24">
-        <use></use>
+    <svg class="modal-close-btn">
+        <use href="./images/sprite.svg#icon-x"></use>
     </svg>
 
     <h2 class="modal-title">забронювати номер</h2>
@@ -31,7 +33,7 @@
             <option value="tomorrow">Завтра</option>
             <option value="after-tomorrow">Післязавтра</option>
         </select>
-        <label class="modal-label" for="date-leave">Дата виїзду</label>
+        <label class="modal-label last-label" for="date-leave">Дата виїзду</label>
         <!-- оформити бронювання закриває модальше вікно -->
         <button class="modal-submit-btn" type="submit">оформити бронювання</button>
     </form>

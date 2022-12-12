@@ -1,6 +1,6 @@
 .modal-section{
     background-color: #FFFDEE;
-    padding: 60px 0;
+    padding: 16px 0 60px 0;
 }
 
 .modal-room{
@@ -56,10 +56,16 @@
     width: 100%;
     padding: 0 12px;
 
-    &:last-child{
+    &.last-label{
         margin-bottom: 40px;
     }
-    // не працює last child
+}
+
+.modal-close-btn{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 20px;
+    align-self: flex-end;
 }
 
 .modal-submit-btn{
