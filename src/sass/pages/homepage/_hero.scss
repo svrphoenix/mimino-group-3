@@ -1,0 +1,73 @@
+.hero {
+  height: 740px;
+  margin: 0;
+  background-color: #3e3e3e;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(../images/homepage/hero/mobile/image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url(../images/homepage/hero/mobile/image-1-2x.jpg);
+  }
+  @include mobile {
+    width: 414px;
+  }
+  @include tablet {
+    width: 714px;
+  }
+}
+.hero-container {
+  padding-top: 181px;
+}
+.hero__title {
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 96px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--primary-text-color-1);
+  text-align: center;
+}
+.hero__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-1);
+  text-align: center;
+}
+.hero__slogan {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--primary-text-color-1);
+  text-align: center;
+}
+.reserved{
+    margin: 0 auto;
+}
+.reserved__button {
+  display: block;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  width: 236px;
+  height: 48px;
+}
+.address{
+  color: var(--accent-color);
+}
