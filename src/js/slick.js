@@ -10,7 +10,7 @@ $('.triple-room__slider').slick({
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '16px',
+        centerPadding: '0px',
         slidesToShow: 2,
       },
     },

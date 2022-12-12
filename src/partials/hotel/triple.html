@@ -1,18 +1,16 @@
 <section class="triple-room">
   <div class="container triple-room__container">
-    <div class="triple-room__text-container">
+    <div class="triple-room__wrapper triple-room__wrapper--text">
       <p class="triple-room__pretitle">Amet minim mollit non</p>
       <p class="triple-room__logo">MIMIHO</p>
-      <div class="triple-room__title-container">
-        <h2 class="section__title triple-room__title">Трьохмісний номер</h2>
-        <p class="triple-room__description">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-      </div>
+      <h2 class="section__title triple-room__title">Трьохмісний номер</h2>
+      <p class="triple-room__description">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
     </div>
-    <div class="triple-room__thumb">
+    <div class="triple-room__wrapper">     <div class="triple-room__thumb">
       <picture class="triple-room__image">
         <source
           srcset="
@@ -38,49 +36,54 @@
         <img
           src="./images/hotel/luxe/mobile/image-1.jpg"
           alt="Зображення трьохмісного готельного номеру"
-          width="400"
+          width="460"
         />
       </picture>
-    </div>
+    </div></div>
     <!-- тут повинен бути слайдер -->
-    <div class="triple-room__slider">
-      <div>
+    <div class="triple-room__wrapper"><div class="triple-room__slider">
+      <div class="slick_slider_card">
         <img
-          src="./images/slider/194 x 194/image-1.jpg"
+          src="./images/slider/254 x 254/image-1.jpg"
           alt="Зображення слайдеру"
-          width="194"
+          width="254"
         />
       </div>
-      <div>
+      <div class="slick_slider_card">
         <img
-          src="./images/slider/194 x 194/image-1.jpg"
+          src="./images/slider/254 x 254/image-1.jpg"
           alt="Зображення слайдеру"
-          width="194"
+          width="254"
         />
       </div>
-      <div>
+      <div class="slick_slider_card">
         <img
-          src="./images/slider/194 x 194/image-1.jpg"
+          src="./images/slider/254 x 254/image-1.jpg"
           alt="Зображення слайдеру"
-          width="194"
+          width="254"
         />
       </div>
-      <div>
+      <div class="slick_slider_card">
         <img
-          src="./images/slider/194 x 194/image-1.jpg"
+          src="./images/slider/254 x 254/image-1.jpg"
           alt="Зображення слайдеру"
-          width="194"
+          width="254"
         />
       </div>
+      <button type="button" class="slick-prev">Previous</button>
     </div>
-    <button type="button" class="slick-prev">Previous</button>
-    <div class="triple-room__button-container">
-      <a href="./room-triple.html" class="button triple-room__about-button"
+  </div>
+  <div class="triple-room__wrapper triple-room__button-container">
+    <!-- <div class="triple-room__button-container"> -->
+      <a
+        href="./room-triple.html"
+        class="secondary_button triple-room__about-button"
         >Детальніше</a
       >
-      <button type="button" class="button triple-room__price-button">
+      <button type="button" class="secondary_button triple-room__price-button">
         Переглянути ціни
       </button>
     </div>
+  <!-- </div> -->
   </div>
 </section>
