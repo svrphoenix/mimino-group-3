@@ -21,4 +21,18 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+}
+
+.modal-resevation {
+  width: 384px;
+  height: 64px;
+  background: #000000;
+  border: 1px solid #F3C653;
+  border-radius: 2px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }/*# sourceMappingURL=book-table-modal.css.map */
