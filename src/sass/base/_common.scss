@@ -1,1 +1,88 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+  font-family: 'Film P3 Bold';
+  src: url(../fonts/film-p3-bold.ttf);
+}
+
+body {
+  margin: 0;
+  //   color: ;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fffdee;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 414px) {
+    max-width: 414px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+.list {
+  list-style: none;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.pretitle {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
+}
+
+.title {
+  font-family: 'Film P3 Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+}
+
+.text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+}

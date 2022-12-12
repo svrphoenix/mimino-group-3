@@ -1,0 +1,19 @@
+.button {
+  cursor: pointer;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 236px;
+  @include font(700, 16px, 20px, 0.02em);
+  text-align: center;
+  color: #f3c653;
+  background: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    border: 2px solid #f3c653;
+    border-radius: 25px;
+  }
+}
