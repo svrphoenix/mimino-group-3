@@ -9,37 +9,43 @@
 //     }
 //   }
 
-  .details {
-    display: flex;
-    width: 414px;
-    height: 735px;
-    background: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7),
-                    url(../images/homepage/details-hotel/hero-image/hero-mobile-min.jpg));
-     
+//Рома: Трішки тобі поправив деякі моменти і залишив коменти. Виправив бекграунд там була помилка у дужках. Але сам бекграунд
+// має бути не на <section class="details">, я розумію чого ти так зробив, бо так було у веб студії на хіро.
+// Тут треба його покласти на цей дів можеш до класу оверлей прикрутити <div class="container hero-overlay">.
+// Я так спробував зробити і воно трохи ламає твою структуру, було вже пізно і мені стало лінь розбиратись тому вже сам будеш ковирятись)))))
 
-    @media screen and (min-width: 1024px) {
-        width: 1024px;
-        height: 620px;
-        background: rgba(0, 0, 0, 0.7);
-    }
+.details {
+  display: flex;
+  //   width: 414px; Рома: ширина задається шириною контейнера
+  //   height: 735px; Рома: висота фіксована не потрібна, висота буде задаватися контнентом і вертикальними маржинами між ними
+  background: rgba(0, 0, 0, 0.7);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/homepage/details-hotel/hero-image/hero-mobile-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    @media screen and (min-width: 1280px) {
-        width: auto;
-        height: auto;
-        background: rgba(0, 0, 0, 0.7);
-        
-    }
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+    // height: 620px; Рома: висота фіксована не потрібна, висота буде задаватися контнентом і вертикальними маржинами між ними
+    // background: rgba(0, 0, 0, 0.7); Рома: цю строку видалиш.
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: auto;
+    // height: auto; Рома: висота фіксована не потрібна, висота буде задаватися контнентом і вертикальними маржинами між ними
+    // background: rgba(0, 0, 0, 0.7); Рома: цю строку видалиш.
+  }
 }
 .hero-overlay {
+  margin: 0 auto;
 }
-.details_logo { 
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-    color: #FFFFFF;
-
+.details_logo {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: #ffffff;
 }
 .details_title {
 }
