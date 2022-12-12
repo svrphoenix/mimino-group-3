@@ -122,3 +122,29 @@
         cursor: pointer;
     }
 }
+
+
+
+// стрілочка select псевдокласом
+
+// прибирає браузерну стрілочку, але не ставить новий псевлоелемент
+
+select{
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+
+    position: relative;
+}
+
+select::after{
+    content: '';
+    display: block;
+    // background-image: url('../images/select-arrow.svg');
+    background-color: var(--brown);
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: 0;
+}
