@@ -1,8 +1,8 @@
 
 .details-restaurant{
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(/src/images/pexels.jpg),
-    no-repeat;
+    // background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    // url(/src/images/pexels.jpg),
+    // no-repeat;
         background-size: cover;
         margin: 0 auto;
         display: flex;
@@ -67,7 +67,7 @@ margin-right: 15px;
 
 .slick-prev:before {
     content: "";
-    background-image: url(../images/vector.png);
+    // background-image: url(../images/vector.png);
 
 }
 
@@ -79,8 +79,6 @@ margin-right: 15px;
 }
 .slick-slider{
     margin-left: 40px;
-
-
 }
 
 .slick-arrow {
