@@ -1,8 +1,9 @@
-
 // homepage
 @import './homepage/hero';
 @import './homepage/about-restaraurant';
 @import './homepage/details-restaurant';
+@import './homepage/about-hotel';
+@import './homepage/details-hotel.scss';
 
 // hotel
 @import './hotel/hero';
@@ -12,10 +13,10 @@
 
 //room-double
 @import './room-double/hero';
+@import './room-double/_body_room';
 
 //room-luxe
 @import './room-luxe/hero';
 
 //room-triple
 @import './room-triple/hero';
-
