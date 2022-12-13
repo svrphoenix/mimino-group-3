@@ -196,6 +196,9 @@
   @include desktop {
     top: 38px;
     left: 1083px;
+
+    // закриваю при десктопі - Соня
+    display: none;
   }
 }
 .soc__icon {
