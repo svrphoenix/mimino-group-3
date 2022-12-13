@@ -48,10 +48,10 @@
 }
 .hero-container {
   padding-top: 181px;
-  @include tablet{
+  @include tablet {
     padding-top: 188px;
   }
-  @include desktop{
+  @include desktop {
     padding-top: 164px;
   }
 }
@@ -200,6 +200,9 @@
     gap: 20px;
   }
   @include desktop {
+    top: 38px;
+    left: 1083px;
+    // закриваю при десктопі - Соня
     display: none;
   }
 }
