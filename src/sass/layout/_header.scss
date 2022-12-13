@@ -1,5 +1,7 @@
 .header__section{
-    background-color: #3e3e3e;
+    // background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-color: #454545;
+    padding: 16px 0 9px 0;
     & a{
         text-decoration: none;
     }
@@ -7,17 +9,25 @@
         list-style: none;
         padding-left: 0;
     }
+
+    @media screen and (max-width:1024px) {
+        padding: 24px 0 33px 0;
+    }
 }
 
 .header__logo {
   text-transform: uppercase;
-  font-family: 'Film P3';
+  font-family: 'Film P3 Bold';
   font-weight: 700;
   font-size: 36px;
   line-height: calc(39/36);
   letter-spacing: 0.3em;
   color: #ffffff;
 
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+    line-height: calc(43/40);
+  }
 }
 
 .nav__line{
@@ -31,21 +41,37 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+    @media screen and (min-width: 1024px) {
+        gap: 72px;
+    }
 }
 
 .nav__item{
     display: flex;
     gap: 6px;
     align-items: center;
+    @media screen and (min-width:1024px) {
+        gap: 32px;
+    }
 }
 
 .nav__link{
-    font-family: 'Montserrat';
     font-weight: 500;
     font-size: 16px;
     line-height: calc(20/16);
     letter-spacing: 0.02em;
     color: #F3C653;
+}
+
+.header__contacts{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    line-height: calc(17/14);
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
 }
 
 .header__icon-contacts {
@@ -55,8 +81,55 @@
 }
 
 
-// сховати на мобільному екрані надлишкові елементи
+// сховати на екрані надлишкові елементи
 
-.mob-hide{
+.mob-hide-tel{
     display: none;
+
+    @media screen and (min-width: 1024px) {
+        display: inline;
+        font-size: 14px;
+        line-height: calc(17/14);
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+}
+.holel-numbers{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.tablet-desc-show{
+    @media screen and (max-width: 1024px){
+        display: none;
+    }
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.tablet-desc-hide{
+    @media screen and (min-width: 1024px){
+        display: none;
+    }
+}
+
+.mob-hide-socials{
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+    }
+}
+
+.header__socials-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__icon-socials{
+    fill: rgba(243, 198, 83, 0.7);
 }
