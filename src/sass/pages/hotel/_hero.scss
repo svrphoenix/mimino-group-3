@@ -46,10 +46,12 @@
         }
     }
 }
-.reserved__table{
+.reserved__table--hotel{
     display: block;
+    margin-bottom: 24px;
     @include tablet{
         display: none;
+        margin: 0;
     }
 }
 .view-prices{
