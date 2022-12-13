@@ -24,7 +24,7 @@
       padding-right: 122px;
     }
 
-    @include desctop {
+    @include desktop {
       width: 1280px;
       padding-left: 216px;
       padding-right: 186px;
@@ -53,7 +53,7 @@
     @include tablet {
       margin-left: 163px;
     }
-    @include desctop {
+    @include desktop {
       margin-left: 231px;
     }
   }
@@ -76,7 +76,7 @@
       display: block;
       margin-left: 137px;
     }
-    @include desctop {
+    @include desktop {
       margin-left: 199px;
     }
   }
@@ -114,7 +114,7 @@
       display: none;
     }
 
-    @include desctop {
+    @include desktop {
       display: none;
     }
 
