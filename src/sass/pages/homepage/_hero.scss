@@ -48,6 +48,12 @@
 }
 .hero-container {
   padding-top: 181px;
+  @include tablet{
+    padding-top: 188px;
+  }
+  @include desktop{
+    padding-top: 164px;
+  }
 }
 .hero__title {
   font-family: 'Film P3 Bold';
@@ -194,8 +200,7 @@
     gap: 20px;
   }
   @include desktop {
-    top: 38px;
-    left: 1083px;
+    display: none;
   }
 }
 .soc__icon {
