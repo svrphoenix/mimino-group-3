@@ -1,0 +1,155 @@
+.restoran__menu {
+  color: #000000;
+  background-color: #f0ecd6;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+
+  @include tablet {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    // padding-top: 58px;
+    padding-bottom: 60px;
+  }
+
+  &-title {
+    font-family: 'Times New Roman';
+    @include font(700, 32px, 37px, 0.02em);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+}
+
+.table {
+  width: 384px;
+
+  @include tablet {
+    width: 414px;
+  }
+  @include desktop {
+    width: 485px;
+  }
+
+  & + & {
+    margin-top: 16px;
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+
+  &-flex {
+    margin-bottom: 32px;
+    @include tablet {
+      display: flex;
+      gap: 88px;
+      margin-bottom: 40px;
+    }
+    @include desktop {
+      gap: 140px;
+      margin-bottom: 31px;
+    }
+  }
+  &__block-item {
+    margin-bottom: 16px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.dich {
+  &__block + &__block {
+    margin-top: 8px;
+    @include desktop {
+      margin-top: 12px;
+    }
+  }
+
+  &__block-item + &__block-item {
+    margin-top: 16px;
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 19px;
+
+    @include desktop {
+      gap: 25px;
+    }
+
+    &-one-col {
+      width: 221px;
+
+      @include desktop {
+        width: 292px;
+      }
+    }
+    &-two-col {
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+
+      width: 144px;
+      //   margin-left: 10px;
+      text-align: left;
+
+      @include desktop {
+        width: 168px;
+        gap: 44px;
+      }
+    }
+  }
+
+  &__title-group {
+    font-family: 'Times New Roman';
+    @include font(700, 20px, 23px, 0.02em);
+    text-align: left;
+    margin-bottom: 16px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+    @include desktop {
+      @include font(700, 24px, 28px, 0.02em);
+    }
+  }
+
+  &__title {
+    // font-family: "Montserrat";
+    @include font(500, 14px, 17px, 0.02em);
+    margin-bottom: 4px;
+  }
+
+  &__composition {
+    // font-family: "Montserrat";
+    @include font(400, 10px, 12px, 0.02em);
+  }
+  &__weight {
+    @include font(300, 14px, 17px, 0.02em);
+    width: 52px;
+  }
+  &__price {
+    width: 62px;
+    @include font(700, 14px, 17px, 0.02em);
+    @include desktop {
+      @include font(700, 16px, 20px, 0.02em);
+      width: 72px;
+    }
+  }
+}
+
+.restoran__button {
+  display: block;
+  position: absolute;
+  //Поставити клас на кнопку зовнішній вигляд і відцентрувати правильно
+  right: calc(50% - 118px);
+  @include tablet {
+    right: 0;
+  }
+}
