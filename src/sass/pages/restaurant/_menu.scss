@@ -9,7 +9,7 @@
     padding-top: 58px;
     padding-bottom: 40px;
   }
-  @include desctop {
+  @include desktop {
     // padding-top: 58px;
     padding-bottom: 60px;
   }
@@ -28,7 +28,7 @@
   @include tablet {
     width: 414px;
   }
-  @include desctop {
+  @include desktop {
     width: 485px;
   }
 
@@ -46,7 +46,7 @@
       gap: 88px;
       margin-bottom: 40px;
     }
-    @include desctop {
+    @include desktop {
       gap: 140px;
       margin-bottom: 31px;
     }
@@ -62,7 +62,7 @@
 .dich {
   &__block + &__block {
     margin-top: 8px;
-    @include desctop {
+    @include desktop {
       margin-top: 12px;
     }
   }
@@ -80,14 +80,14 @@
     align-items: center;
     gap: 19px;
 
-    @include desctop {
+    @include desktop {
       gap: 25px;
     }
 
     &-one-col {
       width: 221px;
 
-      @include desctop {
+      @include desktop {
         width: 292px;
       }
     }
@@ -100,7 +100,7 @@
       //   margin-left: 10px;
       text-align: left;
 
-      @include desctop {
+      @include desktop {
         width: 168px;
         gap: 44px;
       }
@@ -115,7 +115,7 @@
     @include tablet {
       margin-bottom: 20px;
     }
-    @include desctop {
+    @include desktop {
       @include font(700, 24px, 28px, 0.02em);
     }
   }
@@ -137,7 +137,7 @@
   &__price {
     width: 62px;
     @include font(700, 14px, 17px, 0.02em);
-    @include desctop {
+    @include desktop {
       @include font(700, 16px, 20px, 0.02em);
       width: 72px;
     }
