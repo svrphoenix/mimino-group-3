@@ -1,43 +1,84 @@
 
 .details-restaurant{
-    // background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    // url(/src/images/pexels.jpg),
-    // no-repeat;
+    padding-top: 18px;
+    padding-bottom: 40px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/homepage/details-restaurant/bgr-m-1x.jpg);
         background-size: cover;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url(../images/homepage/details-restaurant/bgr-m-2x.jpg);
+            }
+        
+            @include tablet {
+                padding-top: 48px;
+                background-image:
+                    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url(../images/homepage/details-restaurant/bgr-t-1x.jpg);
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image:
+                        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                        url(../images/homepage/details-restaurant/bgr-t-2x.jpg);
+                }
+            }
+        
+            @include desktop {
+                padding-top: 48px;
+                background-image:
+                linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url(../images/homepage/details-restaurant/bgr-d-1x.jpg);
+
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image:
+                        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                        url(../images/homepage/details-restaurant/bgr-d-2x.jpg);
+                }
+
+            }
+
+
+          
+
 }
 
-.details-restaurant__section{
+.details-restaurant__wrapper{
     margin-left: 140px;
 
-    @media screen and (min-width: 1024px) {
+@include tablet {
         margin-left: 278px;
     }
 
-         @media screen and (min-width: 1280px) {
+                 @include desktop {
              margin-left: 338px;
          }
 }
 
-.details-restaurant__logo{
-    
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 43px;
-        letter-spacing: 0.3em;
-        color: #FFFFFF;
+.details-restaurant__title{
+
+        color: var(--primary-text-color-1);
         margin-bottom: 12px;
 }
 
-.details-restaurant__title{
-font-weight: 700;
+.details-restaurant__caption{
 font-size: 20px;
 line-height: 24px;
 letter-spacing: 0.02em;
-color: #FFFFFF;  
+color:var(--primary-text-color-1);  
 margin-bottom: 20px;
 }
 
@@ -51,49 +92,32 @@ color: #BABABA;
 margin-bottom: 48px;
 margin-right: 15px;
 
-@media screen and (min-width: 1024px) {
+@include tablet {
         margin-right: 136px;
     }
 
-        @media screen and (min-width: 1280px) {
+                 @include desktop {
             margin-right: 332px;
         }
 
-
-
 }
 
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:16px;
 
+        @include tablet {
+        align-items: flex-start;
+         margin-left: 47px;
+        }
 
-.slick-prev:before {
-    content: "";
-    // background-image: url(../images/vector.png);
-
+                 @include desktop {
+                    align-items: flex-start;
+                   margin-left: 85px;
+                 }
+    
 }
 
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus{
-    color: #F3C653 !important;
-}
-.slick-slider{
-    margin-left: 40px;
-}
-
-.slick-arrow {
-   display: none;
- position: absolute;
-    bottom: -25px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: transparent !important;
-}
 
