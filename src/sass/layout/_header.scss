@@ -1,6 +1,10 @@
 .header__section{
     // background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    background-color: #454545;
+
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
     padding: 16px 0 9px 0;
     & a{
         text-decoration: none;
@@ -10,7 +14,7 @@
         padding-left: 0;
     }
 
-    @media screen and (max-width:1024px) {
+    @media screen and (min-width:1024px) {
         padding: 24px 0 33px 0;
     }
 }
@@ -126,10 +130,19 @@
 
 .header__socials-list{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 20px;
 }
 
+// .header__socials-item{
+//     width: 24px;
+//     height: 24px;
+// }
+
 .header__icon-socials{
     fill: rgba(243, 198, 83, 0.7);
+
+    &:hover, &:focus{
+        fill: #F3C653;
+    }
 }
