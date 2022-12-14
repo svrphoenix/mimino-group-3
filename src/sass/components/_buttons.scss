@@ -36,3 +36,17 @@
     border-radius: 25px;
   }
 }
+
+.nomer__button {
+  cursor: pointer;
+  display: block;
+  padding: 18px 38px;
+  // width: 236px;
+  text-align: center;
+  @include font(500, 24px, 29px, null);
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: var(--inactive-button-color-2);
+  border: 1px solid var(--focus-button-color-1);
+  border-radius: 25px;
+}
