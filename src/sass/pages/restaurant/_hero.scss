@@ -51,7 +51,7 @@
         display: block;
     }
 }
-.reserved__room{
+.reserved__room--restaurant{
     display: block;
     @include tablet{
         display: none;
