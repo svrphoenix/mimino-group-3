@@ -53,6 +53,10 @@
     left: 47px;
     bottom: 104px;
   }
+  @include desktop{
+    bottom: 48px;
+    left: 85px;
+  }
 }
 .hero__text--room {
   font-family: 'Montserrat';
@@ -67,14 +71,37 @@
     line-height: calc(20 / 16);
   }
 }
+.room__address{
+  position: absolute;
+@include tablet{
+  top: 640px;
+  left: 47px;
+}
+@include desktop{
+  display: none;
+}
+}
 .room-button {
   position: absolute;
   bottom: 40px;
   right: 73px;
   background-color: rgba(0, 0, 0, 0.4);
+  @include tablet{
+    bottom: 64px;
+    right: 47px;
+  }
+  @include desktop{
+    bottom: 66px;
+    right: 85px;
+  }
 }
 .soc__list--room {
   flex-direction: column;
   bottom: 14px;
   left: 15px;
+  @include tablet{
+    flex-direction: row;
+    bottom: 24px;
+    left: 372px;
+  }
 }
