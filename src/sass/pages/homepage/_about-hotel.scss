@@ -1,4 +1,4 @@
-.about-res {
+.about-hotel {
   padding-top: 16px;
 
   &__pos {
@@ -6,40 +6,47 @@
       position: relative;
       display: flex;
       align-items: center;
+      flex-direction: row-reverse;
       gap: 24px;
-      transform: translateY(-32px);
+      transform: translateY(-24px);
     }
     @media screen and (min-width: 1280px) {
       gap: 37px;
-      transform: translateY(-33px);
     }
   }
-
   &__contain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
-
   &__pretitle {
+    display: flex;
+    justify-content: flex-end;
     color: #b4b4b4;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     @media screen and (min-width: 1024px) {
       margin-bottom: 4px;
     }
   }
   &__title {
+    transform: translateX(0.3em);
+    margin-bottom: 16px;
+
     color: #494848;
-    margin-bottom: 12px;
     @media screen and (min-width: 1024px) {
       margin-bottom: 24px;
     }
   }
   &__text {
+    transform: translateX(1.4em);
     width: 258px;
     color: #5f5f5f;
     @media screen and (min-width: 1024px) {
-      width: 439px;
+      transform: translateX(0);
+      width: 419px;
     }
     @media screen and (min-width: 1280px) {
-      width: 518px;
+      width: 488px;
     }
   }
   &__image {
@@ -49,11 +56,9 @@
   &__thumb {
     margin-top: 28px;
     width: 244px;
-    margin-left: auto;
     @media screen and (min-width: 1024px) {
-      width: 400px;
       margin-top: 0;
-      margin-left: 0;
+      width: 400px;
     }
     @media screen and (min-width: 1280px) {
       width: 460px;
@@ -64,17 +69,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 21px;
     @media screen and (min-width: 1024px) {
       position: relative;
-      justify-content: flex-start;
+      justify-content: flex-end;
       gap: 48px;
-      transform: translateY(-15px);
       margin-top: 0;
+      transform: translateY(-15px);
     }
 
     @media screen and (min-width: 1280px) {
-      transform: translateY(-65px);
+      transform: translateY(-47px);
     }
   }
 
