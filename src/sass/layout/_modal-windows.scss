@@ -11,9 +11,9 @@
 
 // підкладка
 
-.overlay{
-    opacity: 0;
-    visibility: hidden;
+.backdrop{
+    // opacity: 0;
+    // visibility: hidden;
 
     position: fixed;
     z-index: 20;
@@ -41,8 +41,8 @@
     width: 414px;
 
     @media screen and (min-width:1024px){
-        margin-left: auto;
-        margin-right: auto;
+        // margin-left: auto;
+        // margin-right: auto;
         width: 712px;
     }
 }
