@@ -12,6 +12,7 @@
       flex-direction: row;
       gap: 0;
       padding-top: 66px;
+      padding-bottom: 104px;
       overflow: visible;
     }
     @include desktop {
@@ -121,9 +122,17 @@
     justify-content: center;
     gap: 16px;
     align-items: center;
+    padding-top: 40px;
 
     @include tablet {
       align-items: end;
     }
+  }
+}
+
+.double-room__slider {
+  transform: translateX(-130px);
+  @include tablet {
+    transform: translateX(-14px);
   }
 }

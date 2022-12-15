@@ -1,0 +1,51 @@
+<!-- додати is-hidden -->
+<div class="modal modal-section" data-modal="price">
+    <!-- book room -->
+    <div class="modal-room">
+      <!-- close modal button -->
+      <svg class="js-modal-close modal-close-btn">
+        <use href="./images/sprite.svg#icon-x"></use>
+      </svg>
+  
+      <h2 class="modal-title">ціни на номер</h2>
+      <h2 class="modal-subtitle">Двомісний люкс</h2>
+
+      <p class="room-category">Категорія номеру</p>
+      <form>
+        <div class="tab-desk-form-wrapper">
+        <div class="tdfw-item">
+            <select class="modal-info" id="nights-quantity" name="nights-quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="1">4</option>
+              <option value="2">5</option>
+              <option value="3">6</option>
+              <option value="3">7</option>
+            </select>
+            <label class="modal-label" for="nights-quantity"
+              >Кількість ночей</label>
+          </div>
+          <div class="tdfw-item">
+            <input
+              class="modal-info"
+              type="price"
+              name="price"
+              id="price"
+              value="1000"
+              pattern="[0-9]{4}"
+            />
+            <label class="modal-label last-label" for="price">грн</label>
+          </div>        
+        </div>
+  
+        <!-- оформити бронювання закриває модальше вікно -->
+        <button class="modal-submit-btn" type="submit">
+          забронювати номер
+        </button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- підкладка затемнення під модільним вікном -->
+  <div class="overlay" id="overlay-modal"></div>

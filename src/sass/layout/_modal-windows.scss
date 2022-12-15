@@ -1,7 +1,44 @@
+.modal{
+    // opacity: 0;
+    // visibility: hidden;
+
+    position: fixed;
+    z-index: 30;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// підкладка
+
+.overlay{
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    // transition: .5s all;
+}
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+// js вище ------------------------------------------------
+
 .modal-section{
     background-color: #FFFDEE;
     padding: 60px 0;
-    position: relative;
+    width: 414px;
 
     @media screen and (min-width:1024px){
         margin-left: auto;
@@ -35,6 +72,31 @@
     text-align: center;
     margin-bottom: 40px;
 }
+
+// for prices ---------------------------------------
+.modal-subtitle{
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: 0.05em;
+    color: #808080;
+
+    margin-bottom: 28px;
+}
+
+.room-category{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.02em;
+    color: var(--brown);
+
+    margin-bottom: 20px;
+}
+
+// --------------------------------------------------
+
 .modal-info{
     width: 100%;
     height: 54px;
@@ -100,6 +162,7 @@
     position: absolute;
     top: 16px;
     right: 16px;
+    cursor: pointer;
 }
 
 .modal-submit-btn{
@@ -122,8 +185,6 @@
         cursor: pointer;
     }
 }
-
-
 
 // стрілочка select псевдокласом
 
