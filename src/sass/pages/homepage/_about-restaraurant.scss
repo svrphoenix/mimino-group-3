@@ -94,4 +94,25 @@
       width: 312px;
     }
   }
+
+  &__wrapper {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 72px;
+    transform: translateX(15px);
+    @include tablet {
+      width: 508px;
+      padding-top: 0;
+      padding-bottom: 96px;
+      margin-left: auto;
+      // transform: translateY(-37px);
+      margin-top: -37px;
+    }
+    @include desktop{
+      width: 626px;
+      padding-bottom: 118px;
+      margin-top: -142px;
+      transform: translateX(20px);
+    }
+  }
 }

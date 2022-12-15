@@ -51,9 +51,14 @@
         display: block;
     }
 }
-.reserved__room{
-    display: block;
-    @include tablet{
-        display: none;
-    }
+
+// .reserved__room{
+//     display: block;
+//     @include tablet{
+//         display: none;
+//     }
+// }
+
+.reserved__table--restaurant{
+    margin-bottom: 24px;
 }

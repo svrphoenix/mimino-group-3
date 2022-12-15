@@ -1,15 +1,19 @@
 .about-kitchen {
   padding-top: 16px;
+padding-bottom: 72px;
 
+@include tablet {
+  padding-bottom: 64px;
+}
   &__pos {
-    @media screen and (min-width: 1024px) {
+    @include tablet {
       position: relative;
       display: flex;
       align-items: center;
       gap: 24px;
       transform: translateY(-32px);
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       gap: 37px;
       transform: translateY(-33px);
     }
@@ -21,24 +25,24 @@
   &__pretitle {
     color: #b4b4b4;
     margin-bottom: 12px;
-    @media screen and (min-width: 1024px) {
+    @include tablet {
       margin-bottom: 4px;
     }
   }
   &__title {
     color: #494848;
     margin-bottom: 12px;
-    @media screen and (min-width: 1024px) {
+    @include tablet {
       margin-bottom: 24px;
     }
   }
   &__text {
     width: 258px;
     color: #5f5f5f;
-    @media screen and (min-width: 1024px) {
+    @include tablet {
       width: 439px;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop{
       width: 518px;
     }
   }
@@ -50,12 +54,12 @@
     margin-top: 28px;
     width: 244px;
     margin-left: auto;
-    @media screen and (min-width: 1024px) {
+    @include tablet {
       width: 400px;
       margin-top: 0;
       margin-left: 0;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop{
       width: 460px;
     }
   }
@@ -65,7 +69,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    @media screen and (min-width: 1024px) {
+    @include tablet {
       position: relative;
       justify-content: flex-start;
       gap: 48px;
@@ -73,25 +77,44 @@
       margin-top: 0;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       transform: translateY(-65px);
     }
   }
 
   &__pic {
     width: 200px;
-    @media screen and (min-width: 1024px) {
+    @include tablet {
       width: 350px;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop{
       width: 460px;
     }
   }
   &__desc {
     width: 163px;
     color: #c79002;
-    @media screen and (min-width: 1024px) {
+    @include tablet {
       width: 312px;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding-top: 32px;
+  // transform: translateX(14px);
+    @include tablet {
+      width: 508px;
+      padding-top: 0;
+      margin-left: auto;
+      // transform: translateY(-37px);
+      padding-bottom: 40px;
+      margin-top: -37px;
+    }
+    @include desktop{
+      width: 608px;
+      margin-top: -142px;
+      transform: translateX(20px);
     }
   }
 }

@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="./images/favicon/favicon.png">
+    
     <script type="module" src="./index.js"></script>
 
     <!-- slick-slider -->
@@ -40,7 +43,11 @@
     </main>
     <include src="./partials/footer.html"></include>
 
-    <include src="./partials/modal-windows.html"></include>
+    <!-- модальны вікна -->
+    <include src="./partials/book-room-modal.html"></include>
+    <include src="./partials/room-price-modal.html"></include>
+    <include src="./partials/book-table-modal.html"></include>
+
     <!-- slick jquery js -->
     <script
       type="text/javascript"
@@ -56,6 +63,13 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
 
+    <!-- slick - скрипт для запуску -->
+    <script type="module" src="./js/slick.js"></script>
+
     <script type="module" src="./js/multiple-items.js"></script>
+
+    <!-- book-room-modal -->
+
+    <script src="./js/book-room.js"></script>
   </body>
 </html>
