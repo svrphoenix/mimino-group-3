@@ -149,6 +149,16 @@
   }
 }
 
+.about-res__slider .slick-slide img {
+  max-width: 245px;
+  @include tablet {
+    max-width: 194px;
+  }
+  @include desktop {
+    max-width: 254px;
+  }
+}
+
 .slider-about {
   position: relative;
 }
