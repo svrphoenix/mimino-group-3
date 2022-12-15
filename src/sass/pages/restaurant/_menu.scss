@@ -1,11 +1,11 @@
 .restoran__menu {
   color: #000000;
-  background-color: #f0ecd6;
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
 
   @include tablet {
+    background-color: #f0ecd6;
     padding-top: 58px;
     padding-bottom: 40px;
   }
