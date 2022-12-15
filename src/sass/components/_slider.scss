@@ -137,6 +137,16 @@
 .slider-about .slick-slide {
 }
 
+.slider-about  .slick-slide img {
+  max-width: 245px;
+  @include tablet {
+    max-width: 194px;
+  }
+  @include desktop {
+    max-width: 245px;
+  }
+}
+
 .about-res__slider .slick-slide img {
   max-width: 245px;
   @include tablet {
