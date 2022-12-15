@@ -1,4 +1,4 @@
-<div class="is-hidden modal-section">
+<!-- <div class=" modal-section">
   <div class="modal-table">
     <button type="button" class="modal-btn" data-modal-close></button
     ><svg class="model-close-icon" width="24" height="24">
@@ -47,4 +47,75 @@
       </button>
     </form>
   </div>
-</div>
+</div> -->
+
+<!-- Соня нижче -->
+
+<div class="backdrop is-hidden">
+  <div class="modal modal-section">
+    <!-- book room -->
+    <div class="modal-room">
+      <!-- close modal button -->
+      <svg class="data-modal-close modal-close-btn" >
+        <use href="./images/sprite.svg#icon-x"></use>
+      </svg>
+  
+      <h2 class="modal-title">забронювати столик</h2>
+      <form>
+        <div class="tab-desk-form-wrapper">
+          <div class="tdfw-item">
+            <input
+              class="modal-info"
+              type="text"
+              name="client"
+              id="client"
+              placeholder="Ваше ім'я"
+            />
+            <label class="modal-label" for="client">
+              На кого забронювати номер?</label
+            >
+          </div>
+          <div class="tdfw-item">
+            <input
+              class="modal-info"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="+38 (___) ___-__-__"
+              value="+38 (___) ___-__-__"
+              pattern="+38[0-9]{3}[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            />
+            <label class="modal-label" for="tel"> Номер телефону</label>
+          </div>
+          <div class="tdfw-item">
+            <select class="modal-info" id="room-type" name="room-type">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <label class="modal-label" for="room-type">Столик на яку кількість осіб?</label>
+          </div>
+          <div class="tdfw-item">
+            <select class="modal-info" id="date-leave" name="date-leave">
+              <option value="today">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+              <option value="after-tomorrow">Післязавтра</option>
+            </select>
+            <label class="modal-label last-label" for="date-leave"
+              >На яку дату бронювати?</label
+            >
+          </div>
+        </div>
+  
+        <!-- оформити бронювання закриває модальше вікно -->
+        <button class="modal-submit-btn" type="submit">
+          оформити бронювання
+        </button>
+      </form>
+    </div>
+  </div>
+  
+  </div>
+  
+  <!-- підкладка затемнення під модільним вікном -->
+  <!-- <div class="overlay" id="overlay-modal is-hidden"></div> -->
