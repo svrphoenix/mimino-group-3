@@ -147,39 +147,3 @@
   gap: 0;
   min-height: 100%;
 }
-
-.single-item .slick-next {
-  position: absolute;
-  right: 0;
-
-  @include tablet {
-    right: 47px;
-  }
-
-  @include desktop {
-    right: 85px;
-  }
-}
-
-.single-item .slick-prev {
-  position: absolute;
-  left: 0;
-
-  @include tablet {
-    left: 47px;
-  }
-
-  @include desktop {
-    left: 85px;
-  }
-}
-
-.single-item .slick-arrow.slick-prev {
-  background: url(../images/rooms/luxe/hero/room_arrow-left.svg) 0 0 / 100%
-    no-repeat;
-}
-
-.single-item .slick-arrow.slick-next {
-  background: url(../images/rooms/luxe/hero/room_arrow-right.svg) 0 0 / 100%
-    no-repeat;
-}
