@@ -64,7 +64,12 @@
     font-size: 16px;
     line-height: calc(20/16);
     letter-spacing: 0.02em;
-    color: #F3C653;
+    color: rgba(243, 198, 83, 0.7);
+
+    &:hover, 
+    &:focus{
+        color: var(--accent-color);
+    }
 }
 
 .header__contacts{
@@ -75,13 +80,18 @@
     font-size: 14px;
     line-height: calc(17/14);
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .header__icon-contacts {
   width: 24px;
   height: 24px;
-  fill: #f3c653;
+  fill: rgba(243, 198, 83, 0.7);
+
+  &:hover,
+  &:focus{
+    fill: var(--accent-color);
+  }
 }
 
 
@@ -95,7 +105,7 @@
         font-size: 14px;
         line-height: calc(17/14);
         letter-spacing: 0.02em;
-        color: #FFFFFF;
+        color: rgba(255, 255, 255, 0.8);
     }
 }
 .holel-numbers{
@@ -112,6 +122,21 @@
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
     padding: 8px;
+
+    &:hover,
+    &:focus{
+        border-color: var(--accent-color);
+    }
+
+    &:hover .header__contacts, &:hover .mob-hide-tel, 
+    &:focus .header__contacts, &:focus .mob-hide-tel{
+        color: #ffffff;
+    }
+    &:hover .header__icon-contacts,
+    &:focus .header__icon-contacts{
+        fill:#F3C653;
+    }
+    // не працює філ на іконках через ховер на блок з бордером
 }
 
 .tablet-desc-hide{
