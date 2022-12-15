@@ -1,6 +1,13 @@
 .modal-section{
     background-color: #FFFDEE;
     padding: 60px 0;
+    position: relative;
+
+    @media screen and (min-width:1024px){
+        margin-left: auto;
+        margin-right: auto;
+        width: 712px;
+    }
 }
 
 .modal-room{
@@ -11,6 +18,10 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width:1024px){
+        width: 592px;
+    }
 }
 
 .modal-title{
@@ -40,6 +51,10 @@
     letter-spacing: 0.05em;
     color: #808080;
     padding: 0 12px;
+
+    @media screen and (min-width:1024px){
+        width: 288px;
+    }
 }
 
 .modal-label{
@@ -56,14 +71,39 @@
     width: 100%;
     padding: 0 12px;
 
-    &:last-child{
+    &.last-label{
         margin-bottom: 40px;
     }
-    // не працює last child
+
+    @media screen and (min-width:1024px){
+        width: 592px;
+    }
+}
+
+.tab-desk-form-wrapper{
+    @media screen and (min-width:1024px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+.tdfw-item{
+    @media screen and (min-width:1024px) {
+        width: 288px;
+    }
+}
+
+.modal-close-btn{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
 }
 
 .modal-submit-btn{
-    width: 384px;
+    width: 100%;
     height: 64px;
     background: #000000;
     border: 1px solid #F3C653;
@@ -75,4 +115,36 @@
     line-height: calc(24/20);
     color: #FFFFFF;
     text-transform: uppercase;
+
+    &:hover, &:focus{
+        background-color: var(--accent-color);
+        color: var( --primary-text-color-2);
+        cursor: pointer;
+    }
+}
+
+
+
+// стрілочка select псевдокласом
+
+// прибирає браузерну стрілочку, але не ставить новий псевлоелемент
+
+select{
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+
+    position: relative;
+}
+
+select::after{
+    content: '';
+    display: block;
+    // background-image: url('../images/select-arrow.svg');
+    background-color: var(--brown);
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: 0;
 }
