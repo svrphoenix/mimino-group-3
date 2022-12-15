@@ -63,7 +63,7 @@
         gap: 159px;
       }
 
-      &--gap {
+      &-gap {
         @include tablet {
           gap: 30px;
         }
@@ -93,7 +93,7 @@
         width: 400px;
       }
 
-      &--width {
+      &-width {
         @include tablet {
           width: 450px;
         }
@@ -106,18 +106,19 @@
 
   &__blok-link {
     padding-top: 8px;
-    @include tablet {
-      padding-left: 496px;
-    }
-    @include desktop {
-      padding-left: 563px;
-    }
+    // @include tablet {
+    //   padding-left: 496px;
+    // }
+    // @include desktop {
+    //   padding-left: 563px;
+    // }
   }
 
   &__button {
     display: block;
     margin-bottom: 20px;
     @include tablet {
+      margin-left: 50%;
       margin-bottom: 32px;
     }
   }
@@ -125,26 +126,29 @@
   &__link {
     font-family: 'Montserrat';
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 1.25;
     letter-spacing: 0.02em;
-
     display: flex;
+    gap: 16px;
     align-items: center;
-
-    /* Brown */
-
+    justify-content: center;
     color: #c79002;
     fill: #c79002;
 
     &:hover,
     &:focus {
       color: #f3c653;
-      fill: transparent;
+      fill: var(--accent-color);
     }
-
-    &-text {
-      margin-right: 12px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-left: 50%;
+      justify-content: start;
     }
+    // &-text {
+    //   margin-right: 12px;
+    // }
   }
 }
