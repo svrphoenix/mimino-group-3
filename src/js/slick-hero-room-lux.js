@@ -1,7 +1,7 @@
-$('.one-time').slick({
-  dots: true,
+$('.single-item').slick({
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: true
+  adaptiveHeight: true,
 });
