@@ -17,3 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
        }); // end click
     }); // end foreach
  }); // end ready
+
+ closeButtons.forEach(function(item){
+    item.addEventListener('click', function(e) {
+       var parentModal = this.closest('.modal');
+       parentModal.classList.remove('active');
+       overlay.classList.remove('active');
+    });
+ }); // end foreach

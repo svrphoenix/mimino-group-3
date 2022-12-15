@@ -1,9 +1,10 @@
-<!-- додати is-hidden -->
-<div class="modal modal-section   is-hidden" data-modal="room">
+<div class="backdrop is-hidden" data-modal>
+
+<div class="modal modal-section">
   <!-- book room -->
   <div class="modal-room">
     <!-- close modal button -->
-    <svg class="js-modal-close modal-close-btn">
+    <svg class="data-modal-close modal-close-btn" data-modal-close>
       <use href="./images/sprite.svg#icon-x"></use>
     </svg>
 
@@ -71,5 +72,7 @@
   </div>
 </div>
 
+</div>
+
 <!-- підкладка затемнення під модільним вікном -->
-<div class="overlay" id="overlay-modal"></div>
+<!-- <div class="overlay" id="overlay-modal is-hidden"></div> -->
