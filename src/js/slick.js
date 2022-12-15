@@ -17,8 +17,6 @@ $('.slider-2pictures-invert').slick({
   slidesToShow: 2,
   adaptiveHeight: true,
   // prevArrow:
-  //   '<button class="slick-prev slick-arrow" aria-label="Prev" type="button" style="display: block;"><img src="../images/arrow-r.svg" class="prev"/></button>',
-  // nextArrow: "<img src='https://svgshare.com/i/6Gf.svg' class='next' alt='2'>",
 });
 
 $('.slider-about').slick({
@@ -29,7 +27,4 @@ $('.slider-about').slick({
   // adaptiveHeight: true,
   // infinite: false,
   variableWidth: true,
-  // prevArrow:
-  //   '<button class="slick-prev slick-arrow" aria-label="Prev" type="button" style="display: block;"><img src="../images/arrow-r.svg" class="prev"/></button>',
-  // nextArrow: "<img src='https://svgshare.com/i/6Gf.svg' class='next' alt='2'>",
 });
