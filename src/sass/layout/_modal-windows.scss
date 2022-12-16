@@ -1,208 +1,212 @@
-.modal{
-    display: none;
+.modal {
+  display: none;
 
-    position: fixed;
-    z-index: 30;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 30;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 // підкладка
 
-.overlay{
-    display: none;
+.overlay {
+  display: none;
 
-    position: fixed;
-    z-index: 20;
-    top: 0;
-    left: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    
-    // transition: .5s all;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  // transition: .5s all;
 }
 
 .modal.is-show,
-.overlay.is-show{
-    display: block;
+.overlay.is-show {
+  display: block;
 }
 
 // js вище ------------------------------------------------
 
-.modal-section{
-    background-color: #FFFDEE;
-    padding: 60px 0;
-    width: 414px;
+.modal-section {
+  background-color: #fffdee;
+  padding: 60px 0;
+  width: 414px;
 
-    @media screen and (min-width:1024px){
-        // margin-left: auto;
-        // margin-right: auto;
-        width: 712px;
-    }
+  @media screen and (min-width: 1024px) {
+    // margin-left: auto;
+    // margin-right: auto;
+    width: 712px;
+  }
 }
 
-.modal-room{
-    display: flex;
-    flex-direction: column;
+.modal-room {
+  display: flex;
+  flex-direction: column;
 
-    width: 384px;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 384px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width:1024px){
-        width: 592px;
-    }
+  @media screen and (min-width: 1024px) {
+    width: 592px;
+  }
 }
 
-.modal-title{
-    font-family: 'Times New Roman';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: calc(28/24);
-    letter-spacing: 0.05em;
-    color: #000000;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 40px;
+.modal-title {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 // for prices ---------------------------------------
-.modal-subtitle{
-    font-family: 'Times New Roman';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: calc(28/24);
-    letter-spacing: 0.05em;
-    color: #808080;
+.modal-subtitle {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: #808080;
 
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
-.room-category{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(20/16);
-    letter-spacing: 0.02em;
-    color: var(--brown);
+.room-category {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--brown);
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 // --------------------------------------------------
 
-.modal-info{
-    width: 100%;
-    height: 54px;
-    margin-bottom: 8px;
-    background-color: transparent;
+.modal-info {
+  width: 100%;
+  height: 54px;
+  margin-bottom: 8px;
+  background-color: transparent;
 
-    border: 1px solid #C79002;
-    border-radius: 2px;
+  border: 1px solid #c79002;
+  border-radius: 2px;
 
-    font-family: 'Times New Roman';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: calc(23/20);
-    letter-spacing: 0.05em;
-    color: #808080;
-    padding: 0 12px;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.05em;
+  color: #808080;
+  padding: 0 12px;
 
-    @media screen and (min-width:1024px){
-        width: 288px;
-    }
+  @media screen and (min-width: 1024px) {
+    width: 288px;
+  }
 }
 
-.modal-label{
-    display: block;
-    margin-bottom: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(17/14);
-    letter-spacing: 0.02em;
-    color: #C79002;
+.modal-label {
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
+  color: #c79002;
 
-    width: 100%;
-    padding: 0 12px;
+  width: 100%;
+  padding: 0 12px;
 
-    &.last-label{
-        margin-bottom: 40px;
-    }
+  &.last-label {
+    margin-bottom: 40px;
+  }
 
-    @media screen and (min-width:1024px){
-        width: 592px;
-    }
+  @media screen and (min-width: 1024px) {
+    width: 592px;
+  }
 }
 
-.tab-desk-form-wrapper{
-    @media screen and (min-width:1024px) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 16px;
-    }
+.tab-desk-form-wrapper {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
-.tdfw-item{
-    @media screen and (min-width:1024px) {
-        width: 288px;
-    }
+.tdfw-item {
+  @media screen and (min-width: 1024px) {
+    width: 288px;
+  }
 }
 
-.modal-close-btn{
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 16px;
-    right: 16px;
+.modal-close-btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.modal-submit-btn {
+  width: 100%;
+  height: 64px;
+  background: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 2px;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-text-color-2);
     cursor: pointer;
-}
-
-.modal-submit-btn{
-    width: 100%;
-    height: 64px;
-    background: #000000;
-    border: 1px solid #F3C653;
-    border-radius: 2px;
-
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24/20);
-    color: #FFFFFF;
-    text-transform: uppercase;
-
-    &:hover, &:focus{
-        background-color: var(--accent-color);
-        color: var( --primary-text-color-2);
-        cursor: pointer;
-    }
+  }
 }
 
 // стрілочка select псевдокласом
 
 // прибирає браузерну стрілочку, але не ставить новий псевлоелемент
 
-select{
-    -webkit-appearance:none; /* Safari and Chrome */
-    appearance:none;
+select {
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
 
-    position: relative;
+  position: relative;
 }
 
-select::after{
-    content: '';
-    display: block;
-    // background-image: url('../images/select-arrow.svg');
-    background-color: var(--brown);
-    background-size: 24px;
-    width: 24px;
-    height: 24px;
+select::after {
+  content: '';
+  display: block;
+  // background-image: url('../images/select-arrow.svg');
+  background-color: var(--brown);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
 
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
