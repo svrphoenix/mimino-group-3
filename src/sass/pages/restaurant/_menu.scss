@@ -146,9 +146,7 @@
 
 .restoran__button {
   display: block;
-  position: absolute;
-  //Поставити клас на кнопку зовнішній вигляд і відцентрувати правильно
-  right: calc(50% - 118px);
+  margin-left: auto;
   @include tablet {
     right: 0;
   }
