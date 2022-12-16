@@ -233,3 +233,25 @@
   background: url(../images/rooms/luxe/hero/room_arrow-right.svg) 0 0 / 100%
     no-repeat;
 }
+
+//! about-hotel
+
+.about-hotel .slick-arrow.slick-prev {
+  left: 199px;
+  background: url('../images/slider/svg-about-R.svg') 0 0 / 100% no-repeat;
+  transform: rotate(180deg) translateY(7px);
+  @include tablet {
+    left: 25px;
+  }
+}
+
+.about-hotel .slick-arrow.slick-next {
+  left: calc(100% - 284px);
+  background: url('../images/slider/svg-about-R.svg') 0 0 / 100% no-repeat;
+  @include tablet {
+    left: calc(100% - 381px);
+  }
+  @include desktop {
+    left: calc(100% - 499px);
+  }
+}

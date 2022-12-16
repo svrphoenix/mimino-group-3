@@ -1,13 +1,14 @@
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden"> -->
 
-<div class="modal modal-section">
+<div class="modal modal-section js-modal" data-modal="price">
+  <!-- close modal button -->
+  <svg class="js-modal-close modal-close-btn">
+    <use href="./images/sprite.svg#icon-x"></use>
+  </svg>
+
     <!-- book room -->
     <div class="modal-room">
-      <!-- close modal button -->
-      <svg class="js-modal-close modal-close-btn">
-        <use href="./images/sprite.svg#icon-x"></use>
-      </svg>
-  
+        
       <h2 class="modal-title">ціни на номер</h2>
       <h2 class="modal-subtitle">Двомісний люкс</h2>
 
@@ -41,7 +42,7 @@
         </div>
   
         <!-- оформити бронювання закриває модальше вікно -->
-        <button class="modal-submit-btn" type="submit">
+        <button class="modal-submit-btn js-modal-close" type="submit">
           забронювати номер
         </button>
       </form>
@@ -51,4 +52,4 @@
   </div>
   
   <!-- підкладка затемнення під модільним вікном -->
-  <!-- <div class="overlay" id="overlay-modal"></div> -->
+  <div class="overlay js-modal-overlay"></div>

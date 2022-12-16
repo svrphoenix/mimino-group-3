@@ -1,12 +1,13 @@
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" > -->
 
-<div class="modal modal-section">
+<div class="modal modal-section js-modal" data-modal="room">
+  <!-- close modal button -->
+  <svg class="data-modal-close modal-close-btn js-modal-close">
+    <use href="./images/sprite.svg#icon-x"></use>
+  </svg>
+
   <!-- book room -->
-  <div class="modal-room">
-    <!-- close modal button -->
-    <svg class="data-modal-close modal-close-btn" data-modal-close>
-      <use href="./images/sprite.svg#icon-x"></use>
-    </svg>
+  <div class="modal-room">    
 
     <h2 class="modal-title">забронювати номер</h2>
     <form>
@@ -65,14 +66,14 @@
       </div>
 
       <!-- оформити бронювання закриває модальше вікно -->
-      <button class="modal-submit-btn" type="submit">
+      <button class="modal-submit-btn js-modal-close" type="submit">
         оформити бронювання
       </button>
     </form>
   </div>
 </div>
 
-</div>
+<!-- </div> -->
 
 <!-- підкладка затемнення під модільним вікном -->
-<!-- <div class="overlay" id="overlay-modal is-hidden"></div> -->
+<div class="overlay js-modal-overlay"></div>
