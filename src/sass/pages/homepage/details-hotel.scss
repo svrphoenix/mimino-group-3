@@ -25,6 +25,8 @@
 }
 .hero-overlay {
   margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 40px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/homepage/details-hotel/hero-image/hero-mobile-min.jpg);
   background-repeat: no-repeat;
@@ -39,6 +41,8 @@
 
   @include tablet {
     max-width: 1024px;
+    padding-top: 48px;
+    padding-bottom: 80px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../images/homepage/details-hotel/hero-image/hero-tablet-min.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -66,9 +70,6 @@
   }
 }
 
-.details-hotel_info {
-}
-
 .details_logo {
   font-weight: 700;
   font-size: 40px;
@@ -76,7 +77,6 @@
   letter-spacing: 0.3em;
   color: #ffffff;
   margin-left: 127px;
-  margin-top: 24px;
   margin-bottom: 12px;
 
   @include tablet {
@@ -231,12 +231,9 @@
 }
 
 .details-hotel_button {
-  margin-bottom: 40px;
-
   @include tablet {
     margin-left: 32px;
   }
-
   @include desktop {
   }
 }
