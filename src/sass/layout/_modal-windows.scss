@@ -1,6 +1,4 @@
 .modal{
-    // opacity: 0;
-    // visibility: hidden;
     display: none;
 
     position: fixed;
@@ -13,9 +11,6 @@
 // підкладка
 
 .overlay{
-    // opacity: 0;
-    // visibility: hidden;
-
     display: none;
 
     position: fixed;
@@ -32,9 +27,6 @@
 
 .modal.is-show,
 .overlay.is-show{
-//    opacity: 1;
-//    visibility: visible;
-
     display: block;
 }
 
