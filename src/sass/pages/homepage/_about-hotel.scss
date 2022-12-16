@@ -1,5 +1,6 @@
 .about-hotel {
   padding-top: 16px;
+  padding-bottom: 16px;
 
   &__pos {
     @media screen and (min-width: 1024px) {
@@ -103,19 +104,19 @@
   &__wrapper {
     width: 585px;
     padding-top: 32px;
-    padding-bottom: 72px;
+    padding-bottom: 56px;
     transform: translateX(-239px);
     @include tablet {
       width: 508px;
       padding-top: 0;
-      padding-bottom: 96px;
+      padding-bottom: 80px;
       // transform: translateY(-37px);
       margin-top: -37px;
       transform: translateX(-60px);
     }
     @include desktop {
       width: 626px;
-      padding-bottom: 118px;
+      padding-bottom: 102px;
       margin-top: -142px;
     }
   }
