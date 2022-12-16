@@ -1,6 +1,7 @@
 .modal{
     // opacity: 0;
     // visibility: hidden;
+    display: none;
 
     position: fixed;
     z-index: 30;
@@ -11,9 +12,11 @@
 
 // підкладка
 
-.backdrop{
+.overlay{
     // opacity: 0;
     // visibility: hidden;
+
+    display: none;
 
     position: fixed;
     z-index: 20;
@@ -27,10 +30,12 @@
     // transition: .5s all;
 }
 
-.modal.active,
-.overlay.active{
-   opacity: 1;
-   visibility: visible;
+.modal.is-show,
+.overlay.is-show{
+//    opacity: 1;
+//    visibility: visible;
+
+    display: block;
 }
 
 // js вище ------------------------------------------------
