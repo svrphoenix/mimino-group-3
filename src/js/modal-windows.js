@@ -29,7 +29,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 var linkArray = document.querySelectorAll('.js-open-modal')
-var overlay = document.querySelectorAll('.js-modal-overlay')
+var overlay = document.querySelector('.js-modal-overlay')
 var crossArray = document.querySelectorAll('.js-modal-close')
 
 linkArray.forEach(function(item) {
@@ -52,6 +52,7 @@ linkArray.forEach(function(item) {
          var parent = this.parentNode;
 
          parent.classList.remove('is-show');
+         overlay.classList.remove('is-show');
 
       });
 
