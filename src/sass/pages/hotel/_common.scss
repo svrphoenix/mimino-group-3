@@ -1,0 +1,132 @@
+%room {
+  &__container {
+    padding-bottom: 32px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: normal;
+      padding-bottom: 40px;
+      overflow: visible;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding-bottom: 32px;
+    position: relative;
+    @include tablet {
+      width: 50%;
+      padding-bottom: 0;
+    }
+    &--text {
+      padding-top: 32px;
+
+      @include tablet {
+        padding-top: 64px;
+      }
+
+      @include desktop {
+        padding-top: 72px;
+      }
+    }
+  }
+
+  &__pretitle {
+    margin-bottom: 8px;
+    font-family: 'Times New Roman', serif;
+    @include font(null, 20px, 23px, null);
+    color: var(--secondary-text-color);
+
+    @include tablet {
+      margin-bottom: 4px;
+      @include font(null, 32px, 37px, null);
+    }
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+    font-family: 'Film P3 Bold', sans-serif;
+    @include font(700, 40px, 43px, 0.3em);
+    text-transform: uppercase;
+    color: #494848;
+
+    @include tablet {
+      margin-bottom: 62px;
+      @include font(null, 64px, 69px, null);
+    }
+
+    @include desktop {
+      margin-bottom: 72px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    font-family: 'Times New Roman', serif;
+    @include font(null, 24px, 28px, 0.05em);
+    color: var(--primary-text-color-2);
+    text-transform: uppercase;
+
+    @include tablet {
+      margin-bottom: 16px;
+      @include font(null, 30px, 34px, null);
+    }
+
+    @include desktop {
+      margin-bottom: 24px;
+      @include font(null, 36px, 41px, null);
+    }
+  }
+
+  &__description {
+    max-width: 258px;
+    @include font(700, 12px, 15px, 0.02em);
+    color: var(--text-room-color);
+
+    @include tablet {
+      max-width: 400px;
+      @include font(null, 16px, 20px, null);
+    }
+  }
+
+  &__thumb {
+    width: 244px;
+    height: 322px;
+    background-color: #dadada;
+    overflow: hidden;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    @include tablet {
+      transform: translateY(-32px);
+      width: 400px;
+      height: 524px;
+      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+    @include desktop {
+      width: 460px;
+      height: 574px;
+    }
+  }
+
+  &__button-container {
+    @extend %full-flex-centered;
+    padding-bottom: 0;
+    flex-direction: column;
+    gap: 16px;
+
+    @include tablet {
+      padding-bottom: 64px;
+    }
+
+    @include desktop {
+      padding-bottom: 72px;
+    }
+  }
+}
+
+@include slider-2pictures('hotel', 8px, 20px, 20px, 194px, 194px, 254px, 115px);
