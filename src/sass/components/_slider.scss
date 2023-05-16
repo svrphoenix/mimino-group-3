@@ -1,261 +1,338 @@
-.slider_card {
-  padding: 0 12px;
-  //   // z-index: 99;
-  //   // position: absolute;
-  overflow: hidden;
-  border-radius: 2px;
-  // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+// .slider-card {
+//   //змінити у всіх файлах
+//   padding: 0 12px;
+//   // border-radius: 2px; //змінити у всіх файлах
 
-  @include tablet {
-    padding: 0px 20px;
-  }
-}
+//   @include tablet {
+//     padding: 0px 20px;
+//   }
+// }
 
+// ЗАГАЛЬНІ ВЛАСТИВОСТІ СЛАЙДЕРУ
 /* Слайдер */
 .slick-slider {
   min-width: 0;
-  margin-left: 0;
 }
 /* Оболонка слайдеру */
 .slick-list {
   overflow: hidden;
-  //дія тіней
-  // padding-left: 15px;
-  // padding-right: 15px;
-  // margin-left: -15px;
-  // margin-right: -15px;
 }
 /* Стрічка слайдів */
 .slick-track {
   display: flex;
   align-items: flex-start;
-  // gap: 10px;
 }
 
-.slick-arrow {
-  z-index: 100;
-}
-
-.slick-arrow.slick-prev:before {
+.slick-arrow:before {
   content: '';
 }
 
-.slick-arrow.slick-next:before {
-  content: '';
+//*****СЛАЙДЕР НА ДВІ КАРТИНКИ*******
+
+// .slider-thumb - клас-тумба для картинки слайдеру
+// .slider-shadow - клас для тіні
+// .slider-arrows - клас для власних стрілок слайдера
+// $class - специфікатор класу слайдера для сторінки
+// $right-direction - булева змінна (true - якщо кнопки праворуч)
+// .inverted - клас для кнопок, які змінюють розміщення у tablet та desktop
+// $inverted - булева змінна (true - якщо кнопки змінюють напрямок)
+// $slider-padding-mobile - падінг між слайдами для мобільної версії
+// $slider-padding-tablet - падінг між слайдами для версії tablet
+// $slider-padding-desktop - падінг між слайдами для версії desktop
+// $image-width-mobile - ширина картинки слайду для мобільної версії
+// $image-width-tablet - ширина картинки слайду для версії tablet
+// $image-width-desktop - ширина картинки слайду для версії desktop
+// $slider-shift - зміщення слайдеру по осі Х (без падінгу)
+
+.slider-thumb {
+  border-radius: 2px;
+  overflow: hidden;
 }
 
-//! INVERT
-
-/* Слайдер на дві картинки */
-.slider-2pictures-invert {
-  position: relative;
+.slick-slide .slider-shadow {
+  box-shadow: none;
+  overflow: hidden;
+  border-radius: 2px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.slider-2pictures-invert .slick-arrow {
-  position: absolute;
-  top: calc(100% + 28px);
-  right: 0;
-  z-index: 10;
-  width: 30px;
-  height: 17px;
-
+.slick-slide.slick-active .slider-shadow {
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.12);
   @include tablet {
-    top: calc(100% + 40px);
-  }
-
-  @include desktop {
-    top: calc(100% + 47px);
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
   }
 }
 
-.slider-2pictures-invert .slick-arrow.slick-prev {
-  left: calc(100% - 92px);
-
-  background: url('/src/images/arrow-r-g.svg') 0 0 / 100% no-repeat;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background: url('../images/arrow-r-y.svg') 0 0 / 100% no-repeat;
-  }
-}
-
-.slider-2pictures-invert .slick-arrow.slick-next {
-  right: 0;
-  background: url('../images/arrow-l-g.svg') 0 0 / 100% no-repeat;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background: url('../images/arrow-l-y.svg') 0 0 / 100% no-repeat;
-  }
-}
-
-//! 2PICTURES
-
-.slider-2pictures {
-  position: relative;
-}
-
-.slider-2pictures .slick-arrow {
+.slider-arrows {
+  display: flex;
+  gap: 32px;
   position: absolute;
-  top: calc(100% + 28px);
-  z-index: 10;
-  width: 30px;
-  height: 17px;
-
-  @include tablet {
-    top: calc(100% + 40px);
-  }
-
-  @include desktop {
-    top: calc(100% + 47px);
-  }
+  top: 100%;
 }
-
-.slider-2pictures .slick-arrow.slick-prev {
-  left: 30px;
-  background: url('/src/images/arrow-r-g.svg') 0 0 / 100% no-repeat;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background: url('../images/arrow-r-y.svg') 0 0 / 100% no-repeat;
-  }
-}
-
-.slider-2pictures .slick-arrow.slick-next {
-  left: 94px;
-  background: url('../images/arrow-l-g.svg') 0 0 / 100% no-repeat;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background: url('../images/arrow-l-y.svg') 0 0 / 100% no-repeat;
-  }
-}
-
-.prev {
-  height: 17px;
-  color: black;
-  fill: #000000;
-  width: 30px;
-  z-index: 1;
+.slider-arrows .slick-arrow {
+  padding: 0;
+  @extend %full-flex-centered;
+  border: none;
   cursor: pointer;
+  color: var(--black);
+  background-color: transparent;
+
+  :hover {
+    color: var(--accent-color);
+  }
+}
+
+.arrow-image {
+  fill: currentColor;
+}
+
+@mixin arrow-position($right-direction, $inverted, $slider-padding) {
+  $arrow-shift: 0; // позиція зміщення кнопок
+  $direction-index: -1; //індекс, який змінює напрямок зміщення кнопок
+
+  @if $right-direction {
+    $arrow-shift: -100%;
+    $slider-padding: $slider-padding * $direction-index;
+  }
+
+  transform: translate($arrow-shift, calc(-100% - 20px));
+
+  @if $inverted {
+    $arrow-shift: ($arrow-shift + 100%) * $direction-index;
+    $slider-padding: $slider-padding * $direction-index;
+  }
+
+  @include tablet {
+    transform: translate(calc(#{$arrow-shift} + #{$slider-padding}), -100%);
+  }
+
+  @include desktop {
+    transform: translate($arrow-shift, -100%);
+  }
+}
+
+@mixin slider-2pictures(
+  $class,
+  $slider-padding-mobile,
+  $slider-padding-tablet,
+  $slider-padding-desktop,
+  $image-width-mobile,
+  $image-width-tablet,
+  $image-width-desktop,
+  $slider-shift
+) {
+  .slider-#{$class} .slider-card {
+    padding: 0 $slider-padding-mobile;
+
+    @include tablet {
+      padding: 0px $slider-padding-tablet;
+    }
+
+    @include desktop {
+      padding: 0px $slider-padding-desktop;
+    }
+  }
+  .slider-#{$class} .slider-card img {
+    max-width: $image-width-mobile;
+    @include tablet {
+      max-width: $image-width-tablet;
+    }
+    @include desktop {
+      max-width: $image-width-desktop;
+    }
+  }
+
+  .slider-#{$class}-wrapper {
+    overflow: hidden;
+    width: calc((#{$image-width-mobile} + #{$slider-padding-mobile} * 2) * 2);
+    padding: ($slider-padding-mobile * 2) 0 40px;
+    margin-top: ($slider-padding-mobile * -2);
+    @include tablet {
+      width: calc((#{$image-width-tablet} + #{$slider-padding-tablet} * 2) * 2);
+      padding: ($slider-padding-tablet * 2) 0 64px;
+      margin-top: ($slider-padding-tablet * -2);
+    }
+    @include desktop {
+      padding: ($slider-padding-desktop * 2) 0 72px;
+      width: calc(
+        (#{$image-width-desktop} + #{$slider-padding-desktop} * 2) * 2
+      );
+    }
+  }
+
+  .slider-#{$class} .slick-list {
+    overflow: visible;
+  }
+
+  .slider-#{$class}--right {
+    transform: translateX(calc(#{$slider-shift} - #{$slider-padding-mobile}));
+
+    @include tablet {
+      transform: translateX(0);
+    }
+
+    @include desktop {
+      margin-left: ($slider-padding-desktop * -1);
+    }
+  }
+
+  .slider-#{$class}--left {
+    transform: translateX(
+      calc(-1 * (#{$slider-shift} + #{$slider-padding-mobile}))
+    );
+    @include tablet {
+      transform: translateX(0);
+    }
+    @include desktop {
+      margin-left: calc(
+        100% - (#{$image-width-desktop} + #{$slider-padding-desktop}) * 2 + #{$slider-padding-desktop} *
+          -1
+      );
+    }
+  }
+
+  .slider-arrows__#{$class}--left {
+    left: 0;
+    @include arrow-position(false, false, $slider-padding-tablet);
+  }
+
+  .slider-arrows__#{$class}--left.inverted {
+    @include tablet {
+      left: 100%;
+    }
+    @include arrow-position(false, true, $slider-padding-tablet);
+  }
+
+  .slider-arrows__#{$class}--right {
+    left: 100%;
+    @include arrow-position(true, false, $slider-padding-tablet);
+  }
+
+  .slider-arrows__#{$class}--right.inverted {
+    @include tablet {
+      left: 0;
+    }
+    @include arrow-position(true, true, $slider-padding-tablet);
+  }
 }
 
 //! ABOUT
 
-.slider-about .slick-slide {
-}
+// .slider-about .slick-slide img {
+//   max-width: 245px;
+//   @include tablet {
+//     max-width: 194px;
+//   }
+//   @include desktop {
+//     max-width: 245px;
+//   }
+// }
 
-.slider-about .slick-slide img {
-  max-width: 245px;
-  @include tablet {
-    max-width: 194px;
-  }
-  @include desktop {
-    max-width: 245px;
-  }
-}
+// .about-res__slider .slick-slide img {
+//   max-width: 245px;
+//   @include tablet {
+//     max-width: 194px;
+//   }
+//   @include desktop {
+//     max-width: 254px;
+//   }
+// }
 
-.about-res__slider .slick-slide img {
-  max-width: 245px;
-  @include tablet {
-    max-width: 194px;
-  }
-  @include desktop {
-    max-width: 254px;
-  }
-}
+// .slider-about {
+//   position: relative;
+// }
 
-.slider-about {
-  position: relative;
-}
+// .slider-about .slick-arrow {
+//   position: absolute;
+//   top: calc(100% + 28px);
+//   z-index: 10;
+//   width: 30px;
+//   height: 17px;
 
-.slider-about .slick-arrow {
-  position: absolute;
-  top: calc(100% + 28px);
-  z-index: 10;
-  width: 30px;
-  height: 17px;
+//   @include tablet {
+//     top: calc(100% + 40px);
+//   }
 
-  @include tablet {
-    top: calc(100% + 40px);
-  }
+//   @include desktop {
+//     top: calc(100% + 47px);
+//   }
+// }
 
-  @include desktop {
-    top: calc(100% + 47px);
-  }
-}
+// .slider-about .slick-arrow.slick-prev {
+//   left: calc(100% - 111px);
+//   background: url('../images/slider/svg-about-R.svg') 0 0 / 100% no-repeat;
+//   transform: rotate(180deg) translateY(7px);
+// }
+// .slider-about .slick-arrow.slick-disabled {
+//   opacity: 0.2;
+// }
 
-.slider-about .slick-arrow.slick-prev {
-  left: calc(100% - 111px);
-  background: url('../images/slider/svg-about-R.svg') 0 0 / 100% no-repeat;
-  transform: rotate(180deg) translateY(7px);
-}
-.slider-about .slick-arrow.slick-disabled {
-  opacity: 0.2;
-}
-
-.slider-about .slick-arrow.slick-next {
-  left: calc(100% - 50px);
-  background: url('../images/slider/svg-about-R.svg') 0 0 / 100% no-repeat;
-}
+// .slider-about .slick-arrow.slick-next {
+//   left: calc(100% - 50px);
+//   background: url('../images/slider/svg-about-R.svg') 0 0 / 100% no-repeat;
+// }
 
 //! single-item
 
-.single-item .slick-arrow {
-  width: 40px;
-  height: 40px;
-}
+// .single-item .slick-arrow {
+//   width: 40px;
+//   height: 40px;
+// }
 
-.single-item .slick-next {
-  position: absolute;
-  right: 15;
+// .single-item .slick-next {
+//   position: absolute;
+//   right: 15;
 
-  @include tablet {
-    right: 47px;
-  }
+//   @include tablet {
+//     right: 47px;
+//   }
 
-  @include desktop {
-    right: 85px;
-  }
-}
+//   @include desktop {
+//     right: 85px;
+//   }
+// }
 
-.single-item .slick-prev {
-  position: absolute;
-  left: 15;
+// .single-item .slick-prev {
+//   position: absolute;
+//   left: 15;
 
-  @include tablet {
-    left: 47px;
-  }
+//   @include tablet {
+//     left: 47px;
+//   }
 
-  @include desktop {
-    left: 85px;
-  }
-}
+//   @include desktop {
+//     left: 85px;
+//   }
+// }
 
-.single-item .slick-arrow.slick-prev {
-  background: url(../images/rooms/luxe/hero/room_arrow-left.svg) 0 0 / 100%
-    no-repeat;
-}
+// .single-item .slick-arrow.slick-prev {
+//   background: url(../images/rooms/luxe/hero/room_arrow-left.svg) 0 0 / 100%
+//     no-repeat;
+// }
 
-.single-item .slick-arrow.slick-next {
-  background: url(../images/rooms/luxe/hero/room_arrow-right.svg) 0 0 / 100%
-    no-repeat;
-}
+// .single-item .slick-arrow.slick-next {
+//   background: url(../images/rooms/luxe/hero/room_arrow-right.svg) 0 0 / 100%
+//     no-repeat;
+// }
 
 //! about-hotel
 
-.about-hotel .slick-arrow.slick-prev {
-  left: 199px;
-  background: url('../images/slider/svg-about-R.svg') 0 0 / 100% no-repeat;
-  transform: rotate(180deg) translateY(7px);
-  @include tablet {
-    left: 25px;
-  }
-}
+// .about-hotel .slick-arrow.slick-prev {
+//   left: 199px;
+//   background: url('../images/slider/svg-about-R.svg') 0 0 / 100% no-repeat;
+//   transform: rotate(180deg) translateY(7px);
+//   @include tablet {
+//     left: 25px;
+//   }
+// }
 
-.about-hotel .slick-arrow.slick-next {
-  left: calc(100% - 284px);
-  background: url('../images/slider/svg-about-R.svg') 0 0 / 100% no-repeat;
-  @include tablet {
-    left: calc(100% - 381px);
-  }
-  @include desktop {
-    left: calc(100% - 499px);
-  }
-}
+// .about-hotel .slick-arrow.slick-next {
+//   left: calc(100% - 284px);
+//   background: url('../images/slider/svg-about-R.svg') 0 0 / 100% no-repeat;
+//   @include tablet {
+//     left: calc(100% - 381px);
+//   }
+//   @include desktop {
+//     left: calc(100% - 499px);
+//   }
+// }

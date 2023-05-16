@@ -34,5 +34,11 @@
 <symbol id="icon-cil_arrow-right" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M22.56 8l-1.42 1.429 6.020 6.060h-26.16v2.021h26.16l-6.020 6.061 1.42 1.429 8.44-8.5-8.44-8.5z"></path>
 </symbol>
+<symbol id="sl-arrow-left" viewBox="0 0 32 32">
+<path d="M31.0833 14.9998H5.00574L11.0054 9.00012L9.59124 7.58594L1.17731 15.9999L9.59124 24.4138L11.0054 22.9996L5.00562 16.9998H31.0833V14.9998Z"></path>
+</symbol>
+<symbol id="sl-arrow-right" viewBox="0 0 32 32">
+<path d="M22.492 7.586l-1.414 1.414 6 6h-26.078v2h26.078l-6 6 1.414 1.414 8.414-8.414-8.414-8.414z"></path>
+</symbol>
 </defs>
 </svg>

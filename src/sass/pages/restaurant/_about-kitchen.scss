@@ -1,10 +1,9 @@
 .about-kitchen {
   padding-top: 16px;
-padding-bottom: 72px;
 
-@include tablet {
-  padding-bottom: 64px;
-}
+  @include tablet {
+    padding-bottom: 32px;
+  }
   &__pos {
     @include tablet {
       position: relative;
@@ -19,8 +18,8 @@ padding-bottom: 72px;
     }
   }
 
-  &__contain {
-  }
+  // &__contain {
+  // }
 
   &__pretitle {
     color: #b4b4b4;
@@ -42,7 +41,7 @@ padding-bottom: 72px;
     @include tablet {
       width: 439px;
     }
-    @include desktop{
+    @include desktop {
       width: 518px;
     }
   }
@@ -59,7 +58,7 @@ padding-bottom: 72px;
       margin-top: 0;
       margin-left: 0;
     }
-    @include desktop{
+    @include desktop {
       width: 460px;
     }
   }
@@ -87,7 +86,7 @@ padding-bottom: 72px;
     @include tablet {
       width: 350px;
     }
-    @include desktop{
+    @include desktop {
       width: 460px;
     }
   }
@@ -102,19 +101,28 @@ padding-bottom: 72px;
   &__wrapper {
     width: 100%;
     padding-top: 32px;
-  // transform: translateX(14px);
+    padding-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+    // transform: translateX(14px);
     @include tablet {
-      width: 508px;
+      overflow: visible;
+      width: 468px;
       padding-top: 0;
       margin-left: auto;
       // transform: translateY(-37px);
-      padding-bottom: 40px;
-      margin-top: -37px;
+      padding-bottom: 0;
+      // margin-top: -37px;
+      bottom: 50px;
+      margin-bottom: -50px;
     }
-    @include desktop{
-      width: 608px;
-      margin-top: -142px;
-      transform: translateX(20px);
+    @include desktop {
+      width: 530px;
+      // margin-top: -142px;
+      bottom: 108px;
+      margin-bottom: -108px;
     }
   }
 }
+
+@include slider-2pictures('kitchen', 12px, 20px, 20px, 245px, 194px, 245px, 69px);

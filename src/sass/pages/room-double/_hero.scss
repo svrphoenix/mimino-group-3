@@ -1,151 +1,150 @@
 .hero-triple {
-    max-width: 414px;
-    margin: 0 auto;
-    height: 740px;
-  
-    @include tablet {
-      max-width: 1024px;
-      height: 720px;
-    }
-  
-    @include desktop {
-      max-width: 1280px;
-    }
+  max-width: 414px;
+  margin: 0 auto;
+  height: 740px;
+
+  @include tablet {
+    max-width: 1024px;
+    height: 720px;
   }
-  
-  .room-container {
-    position: relative;
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-    background-color: #3e3e3e;
-    z-index: 5;
-    background: linear-gradient(
-      180deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0.55) 54.17%,
-      rgba(0, 0, 0, 0) 100%
-    );
+
+  @include desktop {
+    max-width: 1280px;
   }
-  
-  .hero__title--room {
-    font-family: 'Times New Roman';
-    font-weight: 700;
-    font-size: 28px;
-    line-height: calc(32 / 28);
-    letter-spacing: 0.05em;
-    color: var(--primary-text-color-1);
-    text-transform: uppercase;
-    margin-bottom: 14px;
-  
-    @include tablet {
-      font-size: 36px;
-      line-height: calc(41 / 36);
-      margin-bottom: 24px;
-    }
+}
+
+.room-container {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  background-color: #3e3e3e;
+  z-index: 5;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.hero__title--room {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(32 / 28);
+  letter-spacing: 0.05em;
+  color: var(--primary-text-color-1);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    margin-bottom: 24px;
   }
-  
-  .lux {
-    text-transform: none;
+}
+
+.lux {
+  text-transform: none;
+}
+
+.room-box {
+  position: relative;
+}
+
+.room-description {
+  position: absolute;
+  bottom: 142px;
+  left: 15px;
+  width: 325px;
+
+  @include tablet {
+    width: auto;
+    left: 47px;
+    bottom: 104px;
   }
-  
-  .room-box {
-    position: relative;
+
+  @include desktop {
+    bottom: 48px;
+    left: 85px;
   }
-  
-  .room-description {
-    position: absolute;
-    bottom: 142px;
-    left: 15px;
-    width: 325px;
-  
-    @include tablet {
-      width: auto;
-      left: 47px;
-      bottom: 104px;
-    }
-  
-    @include desktop {
-      bottom: 48px;
-      left: 85px;
-    }
+}
+
+.hero__text--room {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-1);
+
+  @include tablet {
+    width: 400px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
   }
-  
-  .hero__text--room {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color-1);
-  
-    @include tablet {
-      width: 400px;
-      font-size: 16px;
-      line-height: calc(20 / 16);
-    }
+}
+
+.room__address {
+  position: absolute;
+
+  @include tablet {
+    top: 636px;
+    left: 47px;
   }
-  
-  .room__address {
-    position: absolute;
-  
-    @include tablet {
-      top: 636px;
-      left: 47px;
-    }
-  
-    @include desktop {
-      display: none;
-    }
+
+  @include desktop {
+    display: none;
   }
-  
-  .room-button {
-    position: absolute;
-    bottom: 40px;
-    right: 73px;
-    background-color: rgba(0, 0, 0, 0.4);
-  
-    @include tablet {
-      bottom: 64px;
-      right: 47px;
-    }
-  
-    @include desktop {
-      bottom: 66px;
-      right: 85px;
-    }
+}
+
+.room-button {
+  position: absolute;
+  bottom: 40px;
+  right: 73px;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  @include tablet {
+    bottom: 64px;
+    right: 47px;
   }
-  
-  .soc__list--room {
-    flex-direction: column;
-    bottom: 14px;
-    left: 15px;
-  
-    @include tablet {
-      flex-direction: row;
-      bottom: 24px;
-      left: 372px;
-    }
+
+  @include desktop {
+    bottom: 66px;
+    right: 85px;
   }
-  
-  // slider
-  
-  .single-item {
-    padding: 0;
-    margin: 0;
+}
+
+.soc__list--room {
+  flex-direction: column;
+  bottom: 14px;
+  left: 15px;
+
+  @include tablet {
+    flex-direction: row;
+    bottom: 24px;
+    left: 372px;
   }
-  
-  .slick-track {
-    gap: 0;
-  }
-  
-  .room-slider-item {
-    position: relative;
-    padding: 0;
-  }
-  
-  .draggable {
-    gap: 0;
-    min-height: 100%;
-  }
-  
+}
+
+// slider
+
+// .single-item {
+//   padding: 0;
+//   margin: 0;
+
+//   & .slick-track {
+//     gap: 0;
+//   }
+
+//   .room-slider-item {
+//     position: relative;
+//     padding: 0;
+//   }
+
+//   & .draggable {
+//     gap: 0;
+//     min-height: 100%;
+//   }
+// }

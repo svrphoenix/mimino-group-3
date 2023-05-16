@@ -166,39 +166,42 @@
   }
 }
 
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  color: #f3c653 !important;
-  cursor: pointer;
-}
-.slick-slider {
-  margin-left: 40px;
-}
+//НЕОБХІДНО ЗВЕРТАТИСЯ ЧЕРЕЗ ВЛАСНІ СТИЛІ
+// .single-item {
+//   & .slick-prev:hover,
+//   & .slick-prev:focus,
+//   & .slick-next:hover,
+//   & .slick-next:focus {
+//     color: #f3c653 !important;
+//     cursor: pointer;
+//   }
+//   & .slick-slider {
+//     margin-left: 40px;
+//   }
 
-.slick-arrow {
-  display: none;
-  position: absolute;
-  // width: 100%; Розтягує стрілочки на hero! Зміни специфічність.
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-}
+//   & .slick-arrow {
+//     display: none;
+//     position: absolute;
+//     // width: 100%;
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+//     text-align: center;
+//   }
 
-.slick-prev,
-.slick-next {
-  color: transparent !important;
-}
+//   & .slick-prev,
+//   & .slick-next {
+//     color: transparent !important;
+//   }
 
-.slick-prev {
-  background: transparent;
-}
+//   & .slick-prev {
+//     background: transparent;
+//   }
 
-.slick-next {
-  background: transparent;
-}
+//   & .slick-next {
+//     background: transparent;
+//   }
+// }
 
 .multiple-items {
   margin-bottom: 16px;

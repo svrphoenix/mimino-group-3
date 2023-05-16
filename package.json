@@ -1,21 +1,21 @@
 {
-  "name": "mimino-group-3",
-  "version": "2.0.0",
+  "name": "mimino",
+  "version": "1.0.0",
   "description": "",
-  "homepage": "https://luckyjuse.github.io/mimino-group-3",
+  "homepage": "https://svrphoenix.github.io/mimino-group-3/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /mimino-group-3/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luckyjuse/mimino-group-3.git"
+    "url": "git+https://github.com/svrphoenix/mimino-group-3.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Serhii Rudenko <svr.phoenix@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/luckyjuse/mimino-group-3/issues"
+    "url": "https://github.com/svrphoenix/mimino-group-3/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"

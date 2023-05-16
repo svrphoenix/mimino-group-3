@@ -7,8 +7,8 @@
 
 // hotel
 @import './hotel/hero';
+@import './hotel/common';
 @import './hotel/luxe';
-@import './hotel/double';
 
 //restaurant
 @import './restaurant/hero';
@@ -26,5 +26,5 @@
 @import './room-triple/hero';
 
 // hotel - room-triple
-@import './room-triple/hero';
+@import './hotel/double';
 @import './hotel/triple';

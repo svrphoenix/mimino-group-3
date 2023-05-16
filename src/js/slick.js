@@ -1,30 +1,38 @@
 // SLICK JS для слайдера на сторінці Готель -- доданий С. Руденком
-$('.slider-2pictures').slick({
-  mobileFirst: true,
-  // centerMode: true,
-  // centerPadding: '5px',
+
+$('.triple-room__slider').slick({
+  arrows: true,
   slidesToShow: 2,
-  adaptiveHeight: true,
-  // prevArrow:
-  //   '<button class="slick-prev slick-arrow" aria-label="Prev" type="button" style="display: block;"><img src="../images/arrow-r.svg" class="prev"/></button>',
-  // nextArrow: "<img src='https://svgshare.com/i/6Gf.svg' class='next' alt='2'>",
+  prevArrow: $('.triple-prev'),
+  nextArrow: $('.triple-next'),
 });
 
-$('.slider-2pictures-invert').slick({
-  mobileFirst: true,
-  // centerMode: true,
-  // centerPadding: '5px',
+$('.lux-room__slider').slick({
+  arrows: true,
   slidesToShow: 2,
-  adaptiveHeight: true,
-  // prevArrow:
+  prevArrow: $('.lux-prev'),
+  nextArrow: $('.lux-next'),
 });
 
-$('.slider-about').slick({
-  mobileFirst: true,
-  // centerMode: true,
-  // centerPadding: '5px',
+$('.double-room__slider').slick({
+  arrows: true,
   slidesToShow: 2,
-  // adaptiveHeight: true,
-  // infinite: false,
-  variableWidth: true,
+  prevArrow: $('.double-prev'),
+  nextArrow: $('.double-next'),
 });
+
+$('.about-kitchen__slider').slick({
+  arrows: true,
+  slidesToShow: 2,
+  prevArrow: $('.kitchen-prev'),
+  nextArrow: $('.kitchen-next'),
+});
+// $('.slider-about').slick({
+//   mobileFirst: true,
+//   // centerMode: true,
+//   // centerPadding: '5px',
+//   slidesToShow: 2,
+//   // adaptiveHeight: true,
+//   // infinite: false,
+//   variableWidth: true,
+// });
