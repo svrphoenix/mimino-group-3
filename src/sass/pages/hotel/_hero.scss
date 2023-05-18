@@ -50,6 +50,7 @@
     }
   }
 }
+
 .reserved__table--hotel {
   display: block;
   margin-bottom: 24px;
@@ -58,9 +59,11 @@
     margin: 0;
   }
 }
+
 .reserved__room--hotel{
     display: block;
-}
+
+  }
 .view-prices {
   display: none;
   @include tablet {

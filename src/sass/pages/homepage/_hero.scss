@@ -47,12 +47,12 @@
   }
 }
 .hero-container {
-  padding-top: 181px;
+  padding-top: 181px; //переглянути ці падінги
   @include tablet {
-    padding-top: 188px;
+    padding-top: 188px;//переглянути ці падінги
   }
   @include desktop {
-    padding-top: 164px;
+    padding-top: 164px;//переглянути ці падінги
   }
 }
 .hero__title {
@@ -75,6 +75,7 @@
     margin-bottom: 32px;
   }
 }
+
 .hero__subtitle {
   font-weight: 600;
   font-size: 16px;
@@ -118,7 +119,7 @@
 }
 .reserved__button {
   display: block;
-  background-color: rgba(0, 0, 0, 0.4);;
+  background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid #ffffff;
   border-radius: 25px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -131,7 +132,8 @@
   width: 236px;
   height: 48px;
   margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #ffffff;
@@ -202,12 +204,15 @@
     gap: 20px;
   }
   @include desktop {
-    top: 38px;
-    left: 1083px;
+    top: 33.5px;
+    // left: 1083px;
+    left: calc(100% - 85px);
+    transform: translate(-100%);
+
     // закриваю при десктопі - Соня
-    display: none;
+    // display: none;
   }
 }
-.soc__icon {
-  fill: var(--icon-soc-color);
-}
+// .soc__icon {
+//   fill: var(--icon-soc-color);
+// }
