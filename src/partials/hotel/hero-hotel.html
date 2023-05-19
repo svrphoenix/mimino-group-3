@@ -1,27 +1,15 @@
-<section class="section hero-hotel">
-  <div class="container hero-container">
-    <h1 class="hero__title">MIMIHO</h1>
-    <h2 class="hero__subtitle">Готель</h2>
-    <p class="hero__slogan">смак життя 24/7</p>
-    <div class="reserved">
-      <!-- додати атрибут для модалки -->
-      <button type="button" class="reserved__button reserved__table--hotel">
-        Забронювати столик
-      </button>
-      <!-- додати атрибут для модалки -->
-      <button
-        type="button"
-        class="reserved__button reserved__room--hotel js-open-modal"
-        data-modal="room"
-      >
+<section class="hero hero--hotel">
+  <div class="container hero__container">
+    <div class="hero__text-container">
+      <h1 class="hero__title">mimiho</h1>
+      <h2 class="hero__subtitle">Готель</h2>
+      <p class="hero__slogan hero__slogan--hotel">готель 24/7</p>
+    </div>
+    <div class="hero__button-container">
+      <button type="button" class="button js-open-modal" data-modal="room">
         Забронювати номер
       </button>
-      <!-- додати атрибут для модалки-->
-      <button
-        type="button"
-        class="reserved__button view-prices js-open-modal"
-        data-modal="price"
-      >
+      <button type="button" class="button js-open-modal" data-modal="price">
         Переглянути ціни
       </button>
     </div>
@@ -38,37 +26,27 @@
         вул. Маршала Бірюзова, 15</a
       >
     </address>
-    <!-- додати шляхи до соцмереж-->
-    <ul class="soc__list list">
-      <li class="soc__item">
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          class="soc__link link"
-          ><svg class="soc__icon" width="24" height="24">
-            <use href="./images/sprite.svg#instagram"></use></svg
-        ></a>
+    <ul class="soc__list">
+      <li>
+        <a class="socials-item" href="" aria-label="instagram">
+          <svg class="socials-icon" aria-hidden="true" focusable="false">
+            <use href="./images/sprite.svg#instagram"></use>
+          </svg>
+        </a>
       </li>
-      <li class="soc__item">
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          class="soc__link link"
-          ><svg class="soc__icon" width="24" height="24">
-            <use href="./images/sprite.svg#facebook"></use></svg
-        ></a>
+      <li>
+        <a class="socials-item" href="" aria-label="facebook">
+          <svg class="socials-icon" aria-hidden="true" focusable="false">
+            <use href="./images/sprite.svg#facebook"></use>
+          </svg>
+        </a>
       </li>
-      <li class="soc__item">
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          class="soc__link link"
-          ><svg class="soc__icon" width="24" height="24">
-            <use href="./images/sprite.svg#telegram"></use></svg
-        ></a>
+      <li>
+        <a class="socials-item" href="" aria-label="telegram">
+          <svg class="socials-icon" aria-hidden="true" focusable="false">
+            <use href="./images/sprite.svg#telegram"></use>
+          </svg>
+        </a>
       </li>
     </ul>
   </div>

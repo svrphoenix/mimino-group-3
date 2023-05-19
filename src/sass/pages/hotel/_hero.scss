@@ -1,14 +1,6 @@
-.hero-hotel {
-  max-width: 414px;
-  margin: 0 auto;
-  position: relative;
-  height: 740px;
-  background-color: #3e3e3e;
+.hero--hotel {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/hotel/hero/mobile/image-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -18,8 +10,6 @@
   }
 
   @include tablet {
-    max-width: 1024px;
-    height: 720px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/hotel/hero/tablet/image-1.jpg);
 
@@ -35,7 +25,6 @@
   }
 
   @include desktop {
-    max-width: 1280px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/hotel/hero/desktop/image-1.jpg);
 
@@ -51,22 +40,6 @@
   }
 }
 
-.reserved__table--hotel {
-  display: block;
-  margin-bottom: 24px;
-  @include tablet {
-    display: none;
-    margin: 0;
-  }
-}
-
-.reserved__room--hotel{
-    display: block;
-
-  }
-.view-prices {
-  display: none;
-  @include tablet {
-    display: block;
-  }
+.hero__slogan--hotel {
+  visibility: hidden;
 }

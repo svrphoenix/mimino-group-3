@@ -7,7 +7,7 @@
           <a class="header__nav-link" href="./restaurant.html">Ресторан</a>
           <div class="header__contacts-box">
             <a class="header__contacts" href="tel:+0955559533">
-              <svg class="header__contacts-icon">
+              <svg class="header__contacts-icon" aria-label="phone">
                 <use href="./images/sprite.svg#phone"></use></svg
               ><span class="header__contacts-number">095 555 95 33</span>
             </a>
@@ -15,14 +15,17 @@
         </li>
         <li class="header__nav-item">
           <a class="header__nav-link" href="./hotel.html">Готель</a>
-          <div class="header__contacts-box">
+          <div class="header__contacts-box" role="list">
             <a class="header__contacts" href="tel:+0668491089">
-              <svg class="header__contacts-icon">
+              <svg class="header__contacts-icon" aria-label="phone">
                 <use href="./images/sprite.svg#phone"></use>
               </svg>
               <span class="header__contacts-number">066 849 10 89</span>
             </a>
-            <a class="header__contacts" href="tel:+0672758540">
+            <a
+              class="header__contacts header__contacts--additional"
+              href="tel:+0672758540"
+            >
               <span class="header__contacts-number">067 275 85 40</span>
             </a>
           </div>
@@ -31,39 +34,6 @@
     </nav>
     <!-- у мобільному та таблеті соц.мережі переходять в hero -->
     <!-- <ul class="header__socials-list">
-      <li>
-        <a class="socials-item" href="" aria-label="instagram">
-          <svg
-            class="socials-icon"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <use href="./images/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="socials-item" href="" aria-label="facebook">
-          <svg
-            class="socials-icon"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <use href="./images/sprite.svg#facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="socials-item" href="" aria-label="telegram">
-          <svg
-            class="socials-icon"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <use href="./images/sprite.svg#telegram"></use>
-          </svg>
-        </a>
-      </li>
     </ul> -->
   </div>
 </header>

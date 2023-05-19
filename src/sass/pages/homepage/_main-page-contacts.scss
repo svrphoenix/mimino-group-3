@@ -1,20 +1,15 @@
 .contacts {
-  font-style: normal;
   text-align: left;
-  background-color: #fffdee;
-
-  .link {
-    text-decoration: none;
-  }
+  background-color: var(--bg-lemon);
 
   & .container {
-    @media screen and (min-width: 1024px) {
+    @include tablet {
       display: flex;
       justify-content: space-between;
       color: var(--bronze-paragraph-color);
     }
 
-    & .section-title__visually-hidden {
+    & .section-title--visually-hidden {
       position: absolute;
       white-space: nowrap;
       width: 1px;
@@ -33,59 +28,47 @@
     padding-bottom: 32px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @include tablet {
+    margin-bottom: 0;
     padding-top: 56px;
     padding-bottom: 40px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     padding-bottom: 73px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 0;
-  }
-
-  @media screen and (min-width: 1280px) {
     text-align: left;
   }
 
   &__title {
-    font-family: 'Film P3 Bold', sans-serif;
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.08;
-    letter-spacing: 0.3em;
+    @extend %logo_font;
+    @include font(700, 40px, 43px, 0.3em);
     color: #494848;
-    @media screen and (min-width: 1024px) {
+    @include tablet {
       margin-bottom: 8px;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       margin-bottom: 16px;
     }
   }
 
   &__subtitle {
     margin-bottom: 16px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
+    @include font(600, 16px, 20px, 0.02em);
     color: var(--dark-paragraph-color);
-    @media screen and (min-width: 1024px) {
+
+    @include tablet {
       margin-bottom: 52px;
     }
   }
 
   &__item {
-    @media screen and (min-width: 414px) {
+    @include mobile {
       display: flex;
       align-items: center;
     }
 
-    @media screen and (min-width: 1024px) {
-      display: flex;
+    @include tablet {
       align-items: flex-start;
       flex-direction: column;
     }
