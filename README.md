@@ -1,3 +1,3 @@
 # Mimino
 
-Mimino - hotel&rastaurant complex.
+Mimino - hotel&restaurant complex.
